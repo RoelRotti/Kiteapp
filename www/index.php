@@ -123,7 +123,7 @@ $frontend = new WebFrontend(first_found_path(array(
 )));
 $frontend->main();
 
-<!-- <?php
+/* <?php
 
 include '../util.php';
 include '../solver.php';
@@ -177,3 +177,4 @@ $template = new Template('templates/single.phtml');
 $template->errors = $errors;
 
 echo $template->render(); -->
+*/

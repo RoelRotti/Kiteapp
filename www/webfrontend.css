@@ -143,7 +143,7 @@ table {
 .question p {
 	font-size: 1.6em;
 	font-weight: bold;
-	top: 1000;
+	
 }
 
 .question .options {
@@ -154,7 +154,6 @@ table {
 .question .options li {
 	margin: 0;
 	padding: 0;
-	top: 1000;
 }
 
 .question .options label {
@@ -176,7 +175,7 @@ table {
 }
 
 .question .options label {
-	cursor: grabbing;
+	cursor: pointer;
 }
 
 .question .options .single-click input[type=radio] {

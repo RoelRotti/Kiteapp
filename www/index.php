@@ -7,7 +7,7 @@ include '../reader.php';
 date_default_timezone_set('Europe/Amsterdam');
 
 $errors = array();
-$url= "https://github.com/RoelRotti/Kiteapp/blob/master/knowledgebases/kiteapp.xml"
+$url= "https://github.com/RoelRotti/Kiteapp/blob/master/knowledgebases/kiteapp.xml";
 $xml=simplexml_load_file($url);
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST'

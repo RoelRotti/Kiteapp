@@ -3,6 +3,7 @@
 include '../util.php';
 include '../solver.php';
 include '../reader.php';
+include 'RoelRotti/Kiteapp/knowledgebases/kiteapp.xml'; 
 
 date_default_timezone_set('Europe/Amsterdam');
 
@@ -15,11 +16,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'
 	switch ($_POST['action'])
 	{
 		case 'analyse':
-			header('Location: analyse.php?kb=' . rawurlencode($file));
+			header('Location: analyse.php?kb=' . rawurlencode($kiteapp.xml));
 			break;
 
 		case 'run':
-			header('Location: webfrontend.php?kb=' . rawurlencode($file));
+			header('Location: webfrontend.php?kb=' . rawurlencode($kiteapp.xml));
 			break;
 	}
 

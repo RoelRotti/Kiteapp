@@ -127,6 +127,7 @@ table {
 
 .completed dt {
 	font-size: 1.2em;
+	color: white;
 }
 
 .completed dd {

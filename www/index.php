@@ -3,7 +3,7 @@
 include '../util.php';
 include '../solver.php';
 include '../reader.php';
-include '../kiteapp.xml'; 
+include '.:Kiteapp/knowledgebases/kiteapp.xml'; 
 
 date_default_timezone_set('Europe/Amsterdam');
 

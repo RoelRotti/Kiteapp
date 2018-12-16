@@ -667,17 +667,23 @@
 			<description>Below 70 kg</description>
 			<then>
 				<fact name="weight70">yes</fact>
+				<fact name="weight90">no</fact>
+				<fact name="weight100">no</fact>
 			</then>
 		</option>
 		<option>
 			<description>Between 70-90 kg</description>
 			<then>
+				<fact name="weight70">no</fact>
 				<fact name="weight90">yes</fact>
+				<fact name="weight100">no</fact>
 			</then>
 		</option>
 		<option>
 			<description>Above 90 kg</description>
 			<then>
+				<fact name="weight70">no</fact>
+				<fact name="weight90">no</fact>
 				<fact name="weight100">yes</fact>
 			</then>
 		</option>

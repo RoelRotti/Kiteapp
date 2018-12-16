@@ -138,6 +138,7 @@ table {
 .question {
 	max-width: 600px;
 	margin: 0 auto;
+	top: 100;
 }
 
 .question p {

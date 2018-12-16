@@ -15,7 +15,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'
 	switch ($_POST['action'])
 	{
 		case 'analyse':
-			header('Location: analyse.php?kb=' . rawurlencode($file));
+			header('Location: analyse.php?kb=' . rawurlencode($file);
 			break;
 
 		case 'run':

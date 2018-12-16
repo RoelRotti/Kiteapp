@@ -7,6 +7,7 @@ include '../reader.php';
 date_default_timezone_set('Europe/Amsterdam');
 
 $errors = array();
+$xml=simplexml_load_file("https://github.com/RoelRotti/Kiteapp/blob/master/knowledgebases/kiteapp.xml");
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST'
 	&& isset($_FILES['knowledgebase'])
@@ -15,11 +16,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'
 	switch ($_POST['action'])
 	{
 		case 'analyse':
-			header('Location: analyse.php?kb=' . rawurlencode($file));
+			header('Location: analyse.php?kb=' . rawurlencode($xml));
 			break;
 
 		case 'run':
-			header('Location: webfrontend.php?kb=' . rawurlencode($file));
+			header('Location: webfrontend.php?kb=' . rawurlencode($xml));
 			break;
 	}
 

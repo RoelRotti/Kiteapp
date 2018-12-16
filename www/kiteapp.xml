@@ -845,46 +845,6 @@
 		<answer value="yes">long sleeves and a thickness of 5/4</answer>
 		<answer value="undefined">long sleeves and a thickness of 4/3</answer>
 	</goal>
-		<goal name="kite6">
-		<description>Kite size to choose for twintip:</description>
-		<answer value="yes">6m2</answer>
-	</goal>
-		<goal name="kite7">
-		<description>Kite size to choose for twintip:</description>
-		<answer value="yes">7m2</answer>
-	</goal>
-		<goal name="kite8">
-		<description>Kite size to choose for twintip:</description>
-		<answer value="yes">8m2</answer>
-	</goal>
-		<goal name="kite9">
-		<description>Kite size to choose for twintip:</description>
-		<answer value="yes">9m2</answer>
-	</goal>
-		<goal name="kite10">
-		<description>Kite size to choose for twintip:</description>
-		<answer value="yes">10m2</answer>
-	</goal>
-		<goal name="kite11">
-		<description>Kite size to choose for twintip:</description>
-		<answer value="yes">11m2</answer>
-	</goal>
-		<goal name="kite12">
-		<description>Kite size to choose for twintip:</description>
-		<answer value="yes">12m2</answer>
-	</goal>
-		<goal name="kite13">
-		<description>Kite size to choose for twintip:</description>
-		<answer value="yes">13m2</answer>
-	</goal>
-		<goal name="kite14">
-		<description>Kite size to choose for twintip:</description>
-		<answer value="yes">14m2</answer>
-	</goal>
-		<goal name="kite15">
-		<description>Kite size to choose for twintip:</description>
-		<answer value="yes">15m2</answer>
-	</goal>
 		<goal name="kite_to_foil_6">
 		<description>Kite size to choose for hydrofoil:</description>
 		<answer value="yes">6m2</answer>
@@ -928,5 +888,45 @@
 		<goal name="kite_for_strapless_13">
 		<description>Kite size to choose for strapless:</description>
 		<answer value="yes">13m2</answer>
+	</goal>
+			<goal name="kite6">
+		<description>Kite size to choose for twintip:</description>
+		<answer value="yes">6m2</answer>
+	</goal>
+		<goal name="kite7">
+		<description>Kite size to choose for twintip:</description>
+		<answer value="yes">7m2</answer>
+	</goal>
+		<goal name="kite8">
+		<description>Kite size to choose for twintip:</description>
+		<answer value="yes">8m2</answer>
+	</goal>
+		<goal name="kite9">
+		<description>Kite size to choose for twintip:</description>
+		<answer value="yes">9m2</answer>
+	</goal>
+		<goal name="kite10">
+		<description>Kite size to choose for twintip:</description>
+		<answer value="yes">10m2</answer>
+	</goal>
+		<goal name="kite11">
+		<description>Kite size to choose for twintip:</description>
+		<answer value="yes">11m2</answer>
+	</goal>
+		<goal name="kite12">
+		<description>Kite size to choose for twintip:</description>
+		<answer value="yes">12m2</answer>
+	</goal>
+		<goal name="kite13">
+		<description>Kite size to choose for twintip:</description>
+		<answer value="yes">13m2</answer>
+	</goal>
+		<goal name="kite14">
+		<description>Kite size to choose for twintip:</description>
+		<answer value="yes">14m2</answer>
+	</goal>
+		<goal name="kite15">
+		<description>Kite size to choose for twintip:</description>
+		<answer value="yes">15m2</answer>
 	</goal>
 </knowledge>

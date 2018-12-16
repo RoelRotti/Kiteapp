@@ -1,6 +1,10 @@
 <?php $this->extends('layout.phtml') ?>
 
 <?php $this->begin('content') ?>
+
+<video width="320" height="240" controls>
+<source src="https://www.youtube.com/watch?v=JMROOeHbkps type="video/mp4">
+</video>
 <section class="completed">
 	<h2>Your gear:</h2>
 	<dl>
@@ -16,7 +20,4 @@
 	<?php endforeach ?>
 	</dl>
 </section>
-<video width="320" height="240" controls>
-<source src="https://www.youtube.com/watch?v=JMROOeHbkps">
-</video>
 <?php $this->end() ?>

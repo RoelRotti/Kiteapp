@@ -18,7 +18,6 @@ switch ($_POST['action'])
 			header('Location: webfrontend.php?kb=' . rawurlencode('kiteapp.xml'));
 			break;
 	}
-exit;
 
 function process_file($file, array &$errors = array())
 {

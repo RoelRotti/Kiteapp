@@ -16,11 +16,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'
 	switch ($_POST['action'])
 	{
 		case 'analyse':
-			header('Location: analyse.php?kb=' . rawurlencode($kiteapp.xml));
+			header('Location: analyse.php?kb=' . rawurlencode('kiteapp.xml'));
 			break;
 
 		case 'run':
-			header('Location: webfrontend.php?kb=' . rawurlencode($kiteapp.xml));
+			header('Location: webfrontend.php?kb=' . rawurlencode('kiteapp.xml'));
 			break;
 	}
 

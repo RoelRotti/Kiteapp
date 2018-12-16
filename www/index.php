@@ -8,7 +8,8 @@ date_default_timezone_set('Europe/Amsterdam');
 
 $errors = array();
 
-
+switch ($_POST['action'])
+	{
 		case 'analyse':
 			header('Location: analyse.php?kb=' . rawurlencode('kiteapp.xml'));
 			break;
@@ -16,7 +17,7 @@ $errors = array();
 		case 'run':
 			header('Location: webfrontend.php?kb=' . rawurlencode('kiteapp.xml'));
 			break;
-
+	}
 
 function process_file($file, array &$errors = array())
 {

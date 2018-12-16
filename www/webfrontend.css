@@ -24,8 +24,8 @@ pre {
 	position: fixed;
 	top: 0;
 	left: 0;
-	width: 100%;
-	height: 24px;
+	width: 80%;
+	height: 50px;
 	background: Navy;
 	box-shadow: 0 0 4px #333;
 	z-index: 10;

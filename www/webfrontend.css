@@ -139,6 +139,12 @@ table {
 	margin: 0 1em 2em 1em;
 	padding: 0 1em;
 	border-left: 1px solid silver;
+	display: block;
+	text-shadow: 0 1px 0 white;
+	border: 1px solid #D8D8D8 !important;
+	background: #F2F2F2;
+	background: -webkit-linear-gradient(top, whiteSmoke, #F1F1F1);
+	border-radius: 2px;
 }
 
 .question {

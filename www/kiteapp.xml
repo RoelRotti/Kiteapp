@@ -662,8 +662,7 @@
 	
 	
 	<question>
-		<description>What is your weight</description>
-		
+		<description>What is your weight?</description>
 		<option>
 			<description>Below 70 kg</description>
 			<then>
@@ -691,53 +690,125 @@
 			<description>0-8 knots</description>
 			<then>
 				<fact name="wind8">yes</fact>
+				<fact name="wind12">no</fact>
+				<fact name="wind15">no</fact>
+				<fact name="wind20">no</fact>
+				<fact name="wind25">no</fact>
+				<fact name="wind30">no</fact>
+				<fact name="wind35">no</fact>
+				<fact name="wind40">no</fact>
+				<fact name="wind50">no</fact>
 			</then>
 		</option>
 		<option>
 			<description>8-12 knots</description>
 			<then>
+				<fact name="wind8">no</fact>
 				<fact name="wind12">yes</fact>
+				<fact name="wind15">no</fact>
+				<fact name="wind20">no</fact>
+				<fact name="wind25">no</fact>
+				<fact name="wind30">no</fact>
+				<fact name="wind35">no</fact>
+				<fact name="wind40">no</fact>
+				<fact name="wind50">no</fact>
 			</then>
 		</option>
 		<option>
 			<description>12-15 knots</description>
 			<then>
+				<fact name="wind8">no</fact>
+				<fact name="wind12">no</fact>
 				<fact name="wind15">yes</fact>
+				<fact name="wind20">no</fact>
+				<fact name="wind25">no</fact>
+				<fact name="wind30">no</fact>
+				<fact name="wind35">no</fact>
+				<fact name="wind40">no</fact>
+				<fact name="wind50">no</fact>
 			</then>
 		</option>
 		<option>
 			<description>15-20 knots</description>
 			<then>
+				<fact name="wind8">no</fact>
+				<fact name="wind12">no</fact>
+				<fact name="wind15">no</fact>
 				<fact name="wind20">yes</fact>
+				<fact name="wind25">no</fact>
+				<fact name="wind30">no</fact>
+				<fact name="wind35">no</fact>
+				<fact name="wind40">no</fact>
+				<fact name="wind50">no</fact>
 			</then>
 		</option>
 		<option>
 			<description>20-25 knots</description>
 			<then>
+				<fact name="wind8">no</fact>
+				<fact name="wind12">no</fact>
+				<fact name="wind15">no</fact>
+				<fact name="wind20">no</fact>
 				<fact name="wind25">yes</fact>
+				<fact name="wind30">no</fact>
+				<fact name="wind35">no</fact>
+				<fact name="wind40">no</fact>
+				<fact name="wind50">no</fact>
 			</then>
 		</option>
 		<option>
 			<description>25-30 knots</description>
 			<then>
+				<fact name="wind8">no</fact>
+				<fact name="wind12">no</fact>
+				<fact name="wind15">no</fact>
+				<fact name="wind20">no</fact>
+				<fact name="wind25">no</fact>
 				<fact name="wind30">yes</fact>
+				<fact name="wind35">no</fact>
+				<fact name="wind40">no</fact>
+				<fact name="wind50">no</fact>
 			</then>
 		</option>
 		<option>
 			<description>30-35 knots</description>
 			<then>
+				<fact name="wind8">no</fact>
+				<fact name="wind12">no</fact>
+				<fact name="wind15">no</fact>
+				<fact name="wind20">no</fact>
+				<fact name="wind25">no</fact>
+				<fact name="wind30">no</fact>
 				<fact name="wind35">yes</fact>
+				<fact name="wind40">no</fact>
+				<fact name="wind50">no</fact>
 			</then>
 		</option>
 		<option>
 			<description>35-40 knots</description>
 			<then>
+				<fact name="wind8">no</fact>
+				<fact name="wind12">no</fact>
+				<fact name="wind15">no</fact>
+				<fact name="wind20">no</fact>
+				<fact name="wind25">no</fact>
+				<fact name="wind30">no</fact>
+				<fact name="wind35">no</fact>
 				<fact name="wind40">yes</fact>
+				<fact name="wind50">no</fact>
 			</then>
 		</option>
 		<option>
 			<description>above 40 knots</description>
 			<then>
+				<fact name="wind8">no</fact>
+				<fact name="wind12">no</fact>
+				<fact name="wind15">no</fact>
+				<fact name="wind20">no</fact>
+				<fact name="wind25">no</fact>
+				<fact name="wind30">no</fact>
+				<fact name="wind35">no</fact>
+				<fact name="wind40">no</fact>
 				<fact name="wind50">yes</fact>
 			</then>
 		</option>

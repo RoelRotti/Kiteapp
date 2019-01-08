@@ -995,7 +995,12 @@
 	<rule>
 		<description>To make sure no other kind off wetsuits are shown</description>
 		<if>
-			<fact name="temp0">yes</fact>	
+			<and>
+				<fact name="temp0">yes</fact>	
+				<not>
+					<fact name="kite">no</fact>	
+				</not>
+			</and>
 		</if>
 		<then>
 			<fact name="tooCold">yes</fact>
@@ -1005,7 +1010,12 @@
 		<rule>
 		<description>To make sure no other kind off wetsuits are shown</description>
 		<if>
-			<fact name="temp010">yes</fact>	
+			<and>
+				<fact name="temp010">yes</fact>	
+				<not>
+					<fact name="kite">no</fact>	
+				</not>
+			</and>
 		</if>
 		<then>
 			<fact name="winterSuit">yes</fact>
@@ -1015,7 +1025,12 @@
 	<rule>
 		<description>To make sure no other kind off wetsuits are shown</description>
 		<if>
-			<fact name="temp1020">yes</fact>	
+			<and>
+				<fact name="temp1020">yes</fact>	
+				<not>
+					<fact name="kite">no</fact>	
+				</not>
+			</and>	
 		</if>
 		<then>
 			<fact name="normalSuit">yes</fact>
@@ -1026,7 +1041,12 @@
 	<rule>
 		<description>To make sure no other kind off wetsuits are shown</description>
 		<if>
-			<fact name="temp20">yes</fact>	
+			<and>
+				<fact name="temp20">yes</fact>	
+				<not>
+					<fact name="kite">no</fact>	
+				</not>
+			</and>	
 		</if>
 		<then>
 			<fact name="shorty">yes</fact>

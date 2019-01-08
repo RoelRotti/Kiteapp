@@ -1350,50 +1350,7 @@
 		<answer value="no">A hydrofoil is a board that contains a wing in the water below the board. For hydrofoiling you need to have a lot of experience in kitesurfing and a spot which is deeper than 1,5 meter. One of this requirements fails at the moment. To see how hydrofoiling works, have a look at the link at the top-left corner. </answer>
 	</goal>
 
-	<!-- #### Kite for twintip ####-->
-
-		<goal name="kite6">
-		<description>Kite size to choose for twintip:</description>
-		<answer value="yes">6m2</answer>
-	</goal>
-		<goal name="kite7">
-		<description>Kite size to choose for twintip:</description>
-		<answer value="yes">7m2</answer>
-	</goal>
-		<goal name="kite8">
-		<description>Kite size to choose for twintip:</description>
-		<answer value="yes">8m2</answer>
-	</goal>
-		<goal name="kite9">
-		<description>Kite size to choose for twintip:</description>
-		<answer value="yes">9m2</answer>
-	</goal>
-		<goal name="kite10">
-		<description>Kite size to choose for twintip:</description>
-		<answer value="yes">10m2</answer>
-	</goal>
-		<goal name="kite11">
-		<description>Kite size to choose for twintip:</description>
-		<answer value="yes">11m2</answer>
-	</goal>
-		<goal name="kite12">
-		<description>Kite size to choose for twintip:</description>
-		<answer value="yes">12m2</answer>
-	</goal>
-		<goal name="kite13">
-		<description>Kite size to choose for twintip:</description>
-		<answer value="yes">13m2</answer>
-	</goal>
-		<goal name="kite14">
-		<description>Kite size to choose for twintip:</description>
-		<answer value="yes">14m2</answer>
-	</goal>
-		<goal name="kite15">
-		<description>Kite size to choose for twintip:</description>
-		<answer value="yes">15m2</answer>
-	</goal>
-	
-	<!-- #### Kite for strapless ####-->
+		<!-- #### Kite for strapless ####-->
 
 		<goal name="kite_for_strapless_8">
 		<description>Kite size to choose for strapless:</description>
@@ -1444,5 +1401,48 @@
 		<goal name="kite_to_foil_10">
 		<description>Kite size to choose for hydrofoil:</description>
 		<answer value="yes">10m2</answer>
+	</goal>
+	
+	<!-- #### Kite for twintip ####-->
+
+		<goal name="kite6">
+		<description>Kite size to choose for twintip:</description>
+		<answer value="yes">6m2</answer>
+	</goal>
+		<goal name="kite7">
+		<description>Kite size to choose for twintip:</description>
+		<answer value="yes">7m2</answer>
+	</goal>
+		<goal name="kite8">
+		<description>Kite size to choose for twintip:</description>
+		<answer value="yes">8m2</answer>
+	</goal>
+		<goal name="kite9">
+		<description>Kite size to choose for twintip:</description>
+		<answer value="yes">9m2</answer>
+	</goal>
+		<goal name="kite10">
+		<description>Kite size to choose for twintip:</description>
+		<answer value="yes">10m2</answer>
+	</goal>
+		<goal name="kite11">
+		<description>Kite size to choose for twintip:</description>
+		<answer value="yes">11m2</answer>
+	</goal>
+		<goal name="kite12">
+		<description>Kite size to choose for twintip:</description>
+		<answer value="yes">12m2</answer>
+	</goal>
+		<goal name="kite13">
+		<description>Kite size to choose for twintip:</description>
+		<answer value="yes">13m2</answer>
+	</goal>
+		<goal name="kite14">
+		<description>Kite size to choose for twintip:</description>
+		<answer value="yes">14m2</answer>
+	</goal>
+		<goal name="kite15">
+		<description>Kite size to choose for twintip:</description>
+		<answer value="yes">15m2</answer>
 	</goal>
 </knowledge>

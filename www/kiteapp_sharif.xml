@@ -1384,7 +1384,7 @@
 
 	<goal name="hydrofoil">
 		<description>Can you use a hydrofoil?</description>
-		<answer value="no">A hydrofoil is a board that contains a wing in the water below the board. For hydrofoiling you need to have a lot of experience in kitesurfing and a spot which is deeper than 1,5 meter. One of this requirements fails at the moment. To see how hydrofoiling works, have a look at the link at the top-left corner. </answer>
+		<answer value="no">A hydrofoil is a board that contains a wing in the water below the board. For hydrofoiling you need to have a lot of experience in kitesurfing, a spot which is deeper than 1,5 meter and not too much wind. One of this requirements fails at the moment. To see how hydrofoiling works, have a look at the link at the top-left corner. </answer>
 	</goal>
 
 		<!-- #### Kite for strapless ####-->

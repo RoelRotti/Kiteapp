@@ -12,6 +12,7 @@
 
 	<!-- #### Kitechoice (twintip + waves): below 70 kg #### -->
 
+	
 	<rule>
 		<description>between 8-12 knots and below 70kg + waves = 15m2</description>
 		<if>
@@ -713,6 +714,10 @@
 					<fact name="pro">yes</fact>
 				</or>
 				<fact name="kite15">yes</fact>	
+				<not>
+					<fact name="deep_enough_for_foiling">no</fact>
+				</not>
+					
 			</and>		
 		</if>
 		<then>
@@ -729,6 +734,9 @@
 					<fact name="pro">yes</fact>
 				</or>
 				<fact name="kite14">yes</fact>	
+				<not>
+					<fact name="deep_enough_for_foiling">no</fact>
+				</not>
 			</and>	
 		</if>
 		<then>
@@ -745,6 +753,9 @@
 					<fact name="pro">yes</fact>
 				</or>
 				<fact name="kite13">yes</fact>	
+				<not>
+					<fact name="deep_enough_for_foiling">no</fact>
+				</not>
 			</and>	
 		</if>
 		<then>
@@ -761,6 +772,9 @@
 					<fact name="pro">yes</fact>
 				</or>
 				<fact name="kite12">yes</fact>	
+				<not>
+					<fact name="deep_enough_for_foiling">no</fact>
+				</not>
 			</and>	
 		</if>
 		<then>
@@ -777,6 +791,9 @@
 					<fact name="pro">yes</fact>
 				</or>
 				<fact name="kite11">yes</fact>	
+				<not>
+					<fact name="deep_enough_for_foiling">no</fact>
+				</not>
 			</and>
 		</if>
 		<then>

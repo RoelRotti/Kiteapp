@@ -130,8 +130,7 @@ table {
 	display: block;
 	text-shadow: 0 1px 0 white;
 	border: 1px solid #D8D8D8 !important;
-	background: #F2F2F2;
-	background: -webkit-linear-gradient(top, whiteSmoke, #F1F1F1);
+	background: green;
 	border-radius: 2px;
 }
 
@@ -142,8 +141,7 @@ table {
 	display: block;
 	text-shadow: 0 1px 0 white;
 	border: 1px solid #D8D8D8 !important;
-	background: #F2F2F2;
-	background: -webkit-linear-gradient(top, whiteSmoke, #F1F1F1);
+	background: green;
 	border-radius: 2px;
 }
 

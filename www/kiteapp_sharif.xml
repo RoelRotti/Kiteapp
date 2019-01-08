@@ -1316,12 +1316,12 @@
 
 	<goal name="strapless">
 		<description>Can you use a strapless board?</description>
-		<answer value="no">No you are too unexperienced or the conditions aren't good for a strapless board.</answer>
+		<answer value="no">A strappless board is a board which has no straps on it in contrast to the twintip board. This board requires experience on the twintip board first. A strapless board has a higher buoyancy and therefore goes with less friction over the water. At this moment the wind is to strong or you need to practice a bit more with the twintip board first.</answer>
 	</goal>
 
 	<goal name="hydrofoil">
 		<description>Can you use a hydrofoil?</description>
-		<answer value="no">A hydrofoil is a board that contains a wing in the water below the board. For hydrofoiling you need to have a lot of experience in kitesurfing and a spot which is deeper than 1,5 meter. On of this requirements fails at the moment. To see how hydrofoiling works, have a look at the link at the top-left corner. </answer>
+		<answer value="no">A hydrofoil is a board that contains a wing in the water below the board. For hydrofoiling you need to have a lot of experience in kitesurfing and a spot which is deeper than 1,5 meter. One of this requirements fails at the moment. To see how hydrofoiling works, have a look at the link at the top-left corner. </answer>
 	</goal>
 
 	<!--<goal name="cold">

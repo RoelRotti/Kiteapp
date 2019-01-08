@@ -92,8 +92,10 @@
 				<fact name="weight70">yes</fact>
 				<fact name="seaChoppy">yes</fact>
 				<not>
-					<fact name="brookie">yes</fact>
-					<fact name="rookie">yes</fact>
+					<and>
+						<fact name="brookie">yes</fact>
+						<fact name="rookie">yes</fact>
+					</and>
 				</not>
 			</and>		
 		</if>
@@ -110,8 +112,10 @@
 				<fact name="weight70">yes</fact>
 				<fact name="seaChoppy">yes</fact>
 				<not>
-					<fact name="brookie">yes</fact>
-					<fact name="rookie">yes</fact>
+					<and>
+						<fact name="brookie">yes</fact>
+						<fact name="rookie">yes</fact>
+					</and>
 				</not>
 			</and>		
 		</if>
@@ -127,10 +131,6 @@
 				<fact name="wind50">yes</fact>
 				<fact name="weight70">yes</fact>
 				<fact name="seaChoppy">yes</fact>
-				<not>
-					<fact name="brookie">yes</fact>
-					<fact name="rookie">yes</fact>
-				</not>
 			</and>		
 		</if>
 		<then>
@@ -219,8 +219,10 @@
 				<fact name="weight90">yes</fact>
 				<fact name="seaChoppy">yes</fact>
 				<not>
-					<fact name="brookie">yes</fact>
-					<fact name="rookie">yes</fact>
+					<and>
+						<fact name="brookie">yes</fact>
+						<fact name="rookie">yes</fact>
+					</and>
 				</not>
 			</and>		
 		</if>
@@ -237,8 +239,10 @@
 				<fact name="weight90">yes</fact>
 				<fact name="seaChoppy">yes</fact>
 				<not>
-					<fact name="brookie">yes</fact>
-					<fact name="rookie">yes</fact>
+					<and>
+						<fact name="brookie">yes</fact>
+						<fact name="rookie">yes</fact>
+					</and>
 				</not>
 			</and>		
 		</if>
@@ -255,8 +259,10 @@
 				<fact name="weight90">yes</fact>
 				<fact name="seaChoppy">yes</fact>
 				<not>
-					<fact name="brookie">yes</fact>
-					<fact name="rookie">yes</fact>
+					<and>
+						<fact name="brookie">yes</fact>
+						<fact name="rookie">yes</fact>
+					</and>
 				</not>
 			</and>		
 		</if>
@@ -346,8 +352,10 @@
 				<fact name="weight100">yes</fact>
 				<fact name="seaChoppy">yes</fact>
 				<not>
-					<fact name="brookie">yes</fact>
-					<fact name="rookie">yes</fact>
+					<and>
+						<fact name="brookie">yes</fact>
+						<fact name="rookie">yes</fact>
+					</and>
 				</not>
 			</and>		
 		</if>
@@ -364,8 +372,10 @@
 				<fact name="weight100">yes</fact>
 				<fact name="seaChoppy">yes</fact>
 				<not>
-					<fact name="brookie">yes</fact>
-					<fact name="rookie">yes</fact>
+					<and>
+						<fact name="brookie">yes</fact>
+						<fact name="rookie">yes</fact>
+					</and>
 				</not>
 			</and>		
 		</if>
@@ -382,8 +392,10 @@
 				<fact name="weight100">yes</fact>
 				<fact name="seaChoppy">yes</fact>
 				<not>
-					<fact name="brookie">yes</fact>
-					<fact name="rookie">yes</fact>
+					<and>
+						<fact name="brookie">yes</fact>
+						<fact name="rookie">yes</fact>
+					</and>
 				</not>
 			</and>		
 		</if>
@@ -476,8 +488,10 @@
 				<fact name="weight70">yes</fact>
 				<fact name="seaChoppy">no</fact>
 				<not>
-					<fact name="brookie">yes</fact>
-					<fact name="rookie">yes</fact>
+					<and>
+						<fact name="brookie">yes</fact>
+						<fact name="rookie">yes</fact>
+					</and>
 				</not>
 			</and>		
 		</if>
@@ -494,8 +508,10 @@
 				<fact name="weight70">yes</fact>
 				<fact name="seaChoppy">no</fact>
 				<not>
-					<fact name="brookie">yes</fact>
-					<fact name="rookie">yes</fact>
+					<and>
+						<fact name="brookie">yes</fact>
+						<fact name="rookie">yes</fact>
+					</and>
 				</not>
 			</and>		
 		</if>
@@ -511,10 +527,6 @@
 				<fact name="wind50">yes</fact>
 				<fact name="weight70">yes</fact>
 				<fact name="seaChoppy">no</fact>
-				<not>
-					<fact name="brookie">yes</fact>
-					<fact name="rookie">yes</fact>
-				</not>
 			</and>		
 		</if>
 		<then>
@@ -602,8 +614,10 @@
 				<fact name="weight90">yes</fact>
 				<fact name="seaChoppy">no</fact>
 				<not>
-					<fact name="brookie">yes</fact>
-					<fact name="rookie">yes</fact>
+					<and>
+						<fact name="brookie">yes</fact>
+						<fact name="rookie">yes</fact>
+					</and>
 				</not>
 			</and>		
 		</if>
@@ -620,8 +634,10 @@
 				<fact name="weight90">yes</fact>
 				<fact name="seaChoppy">no</fact>
 				<not>
-					<fact name="brookie">yes</fact>
-					<fact name="rookie">yes</fact>
+					<and>
+						<fact name="brookie">yes</fact>
+						<fact name="rookie">yes</fact>
+					</and>
 				</not>
 			</and>		
 		</if>
@@ -638,8 +654,10 @@
 				<fact name="weight90">yes</fact>
 				<fact name="seaChoppy">no</fact>
 				<not>
-					<fact name="brookie">yes</fact>
-					<fact name="rookie">yes</fact>
+					<and>
+						<fact name="brookie">yes</fact>
+						<fact name="rookie">yes</fact>
+					</and>
 				</not>
 			</and>		
 		</if>
@@ -728,8 +746,10 @@
 				<fact name="weight100">yes</fact>
 				<fact name="seaChoppy">no</fact>
 				<not>
-					<fact name="brookie">yes</fact>
-					<fact name="rookie">yes</fact>
+					<and>
+						<fact name="brookie">yes</fact>
+						<fact name="rookie">yes</fact>
+					</and>
 				</not>
 			</and>		
 		</if>
@@ -746,8 +766,10 @@
 				<fact name="weight100">yes</fact>
 				<fact name="seaChoppy">no</fact>
 				<not>
-					<fact name="brookie">yes</fact>
-					<fact name="rookie">yes</fact>
+					<and>
+						<fact name="brookie">yes</fact>
+						<fact name="rookie">yes</fact>
+					</and>
 				</not>
 			</and>		
 		</if>
@@ -764,8 +786,10 @@
 				<fact name="weight100">yes</fact>
 				<fact name="seaChoppy">no</fact>
 				<not>
-					<fact name="brookie">yes</fact>
-					<fact name="rookie">yes</fact>
+					<and>
+						<fact name="brookie">yes</fact>
+						<fact name="rookie">yes</fact>
+					</and>
 				</not>
 			</and>		
 		</if>

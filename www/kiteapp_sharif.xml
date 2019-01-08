@@ -1311,7 +1311,7 @@
 	
 	<goal name="twintip">
 		<description>Can you use a twintip board?</description>
-		<answer value="no">No you are too unexperienced to go kitesurfing on a twintip board with these conditions.</answer>
+		<answer value="no">The wind today is not good for kitesurfing, even on a twintip.</answer>
 	</goal>
 
 	<goal name="strapless">

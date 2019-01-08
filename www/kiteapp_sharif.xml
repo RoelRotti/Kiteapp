@@ -1083,7 +1083,7 @@
 	<question>
 		<description>What is your level?</description>
 		<option>
-			<description>Beginner (<3 kitesessions)</description>
+			<description>Beginner (less than 3 kitesessions) </description>
 			<then>
 				<fact name="brookie">yes</fact>
 				<fact name="rookie">no</fact>
@@ -1110,7 +1110,7 @@
 			</then>
 		</option>
 		<option>
-			<description>Experienced (>20 kitesessions)</description>
+			<description>Experienced (more than 20 kitesessions)</description>
 			<then>
 				<fact name="brookie">no</fact>
 				<fact name="rookie">no</fact>

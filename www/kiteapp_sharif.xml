@@ -988,47 +988,7 @@
 		</then>
 	</rule>
 	
-	<rule>
-		<description>To make sure no other kind off wetsuits are shown</description>
-		<if>
-			<fact name="temp0-10">yes</fact>	
-		</if>
-		<then>
-			<fact name="tooCold">undefined</fact>
-			<fact name="winterSuit">yes</fact>
-			<fact name="normalSuit">undefined</fact>
-			<fact name="shorty">undefined</fact>
-			
-		</then>
-	</rule>
 	
-		<rule>
-		<description>To make sure no other kind off wetsuits are shown</description>
-		<if>
-			<fact name="temp10-20">yes</fact>	
-		</if>
-		<then>
-			<fact name="tooCold">undefined</fact>
-			<fact name="winterSuit">undefined</fact>
-			<fact name="normalSuit">yes</fact>
-			<fact name="shorty">undefined</fact>
-		</then>
-	</rule>
-	
-	<rule>
-		<description>To make sure no other kind off wetsuits are shown</description>
-		<if>
-			<fact name="temp>20">yes</fact>	
-		</if>
-		<then>
-			<fact name="tooCold">undefined</fact>
-			<fact name="winterSuit">undefined</fact>
-			<fact name="normalSuit">undefined</fact>
-			<fact name="shorty">yes</fact>
-		</then>
-	</rule>
-	
-
 
 
 <!-- #################################### Questions #################################### -->
@@ -1039,25 +999,25 @@
 		<option>
 			<description>Below 0 degrees</description>
 			<then>
-				<fact name="tempBelow0">yes</fact>
+				<fact name="temp0">yes</fact>
 			</then>
 		</option>
 		<option>
 			<description>Between 0 and 10 degrees</description>
 			<then>
-				<fact name="temp0-10">yes</fact>
+				<fact name="temp010">yes</fact>
 			</then>
 		</option>
 		<option>
 			<description>Between 10 and 20 degrees</description>
 			<then>
-				<fact name="temp10-20">yes</fact>
+				<fact name="temp1020">yes</fact>
 			</then>
 		</option>
 		<option>
 			<description>Above 20 degrees</description>
 			<then>
-				<fact name="temp>20">yes</fact>
+				<fact name="temp20">yes</fact>
 			</then>
 		</option>
 	</question>
@@ -1339,19 +1299,19 @@
 	<!-- #### Wetsuit ####-->
 
 	
-	<goal name="tooCold">
+	<goal name="temp0">
 		<description>Wetsuit:</description>
 		<answer value="yes">It is too cold to go kitesurfing</answer>
 	</goal>
-	<goal name="winterSuit">
+	<goal name="temp010">
 		<description>Wetsuit:</description>
 		<answer value="yes">Wear a full body wintersuit ( 6/5 or 5/3 ) with neoprene shoes, gloves and a cap</answer>
 	</goal>
-	<goal name="normalSuit">
+	<goal name="temp1020">
 		<description>Wetsuit:</description>
 		<answer value="yes">Wear a full body suit ( 4/3 )</answer>
 	</goal>
-	<goal name="shorty">
+	<goal name="temp20">
 		<description>Wetsuit:</description>
 		<answer value="yes">Wear a short sleeved suit ( 3/2 ) </answer>
 	</goal>

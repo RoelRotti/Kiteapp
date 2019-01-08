@@ -77,6 +77,9 @@
 				<fact name="wind30">yes</fact>
 				<fact name="weight70">yes</fact>
 				<fact name="seaChoppy">yes</fact> 
+				<not>
+					<fact name="brookie">yes</fact>
+				</not>
 			</and>		
 		</if>
 		<then>
@@ -204,6 +207,9 @@
 				<fact name="wind30">yes</fact>
 				<fact name="weight90">yes</fact>
 				<fact name="seaChoppy">yes</fact>
+				<not>
+					<fact name="brookie">yes</fact>
+				</not>
 			</and>		
 		</if>
 		<then>
@@ -337,6 +343,9 @@
 				<fact name="wind30">yes</fact>
 				<fact name="weight100">yes</fact>
 				<fact name="seaChoppy">yes</fact>
+				<not>
+					<fact name="brookie">yes</fact>
+				</not>
 			</and>		
 		</if>
 		<then>
@@ -473,6 +482,9 @@
 				<fact name="wind30">yes</fact>
 				<fact name="weight70">yes</fact>
 				<fact name="seaChoppy">no</fact>
+				<not>
+					<fact name="brookie">yes</fact>
+				</not>
 			</and>		
 		</if>
 		<then>
@@ -599,6 +611,9 @@
 				<fact name="wind30">yes</fact>
 				<fact name="weight90">yes</fact>
 				<fact name="seaChoppy">no</fact>
+				<not>
+					<fact name="brookie">yes</fact>
+				</not>
 			</and>		
 		</if>
 		<then>
@@ -731,6 +746,9 @@
 				<fact name="wind30">yes</fact>
 				<fact name="weight100">yes</fact>
 				<fact name="seaChoppy">no</fact>
+				<not>
+					<fact name="brookie">yes</fact>
+				</not>
 			</and>		
 		</if>
 		<then>

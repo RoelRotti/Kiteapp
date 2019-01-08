@@ -981,9 +981,7 @@
 			<fact name="tempBelow0">yes</fact>	
 		</if>
 		<then>
-			<fact name="temp0-10">no</fact>
-			<fact name="temp10-20">no</fact>
-			<fact name="temp>20">no</fact>
+			<fact name="tooCold">yes</fact>
 		</then>
 	</rule>
 	
@@ -993,9 +991,8 @@
 			<fact name="temp0-10">yes</fact>	
 		</if>
 		<then>
-			<fact name="tempBelow0">no</fact>
-			<fact name="temp10-20">no</fact>
-			<fact name="temp>20">no</fact>
+			<fact name="winterSuit">yes</fact>
+			
 		</then>
 	</rule>
 	
@@ -1005,9 +1002,7 @@
 			<fact name="temp10-20">yes</fact>	
 		</if>
 		<then>
-			<fact name="tempBelow0">no</fact>
-			<fact name="temp0-10">no</fact>
-			<fact name="temp>20">no</fact>
+			<fact name="normalSuit">yes</fact>
 		</then>
 	</rule>
 	
@@ -1017,9 +1012,7 @@
 			<fact name="temp>20">yes</fact>	
 		</if>
 		<then>
-			<fact name="tempBelow0">no</fact>
-			<fact name="temp0-10">no</fact>
-			<fact name="temp10-20">no</fact>
+			<fact name="shorty">yes</fact>
 		</then>
 	</rule>
 	
@@ -1334,19 +1327,19 @@
 	<!-- #### Wetsuit ####-->
 
 	
-	<goal name="tempBelow0">
+	<goal name="tooCold">
 		<description>Wetsuit:</description>
 		<answer value="yes">It is too cold to go kitesurfing</answer>
 	</goal>
-	<goal name="temp0-10">
+	<goal name="winterSuit">
 		<description>Wetsuit:</description>
 		<answer value="yes">Wear a full body wintersuit ( 6/5 or 5/3 ) with neoprene shoes, gloves and a cap</answer>
 	</goal>
-	<goal name="temp10-20">
+	<goal name="normalSuit">
 		<description>Wetsuit:</description>
 		<answer value="yes">Wear a full body suit ( 4/3 )</answer>
 	</goal>
-	<goal name="temp>20">
+	<goal name="shorty">
 		<description>Wetsuit:</description>
 		<answer value="yes">Wear a short sleeved suit ( 3/2 ) </answer>
 	</goal>

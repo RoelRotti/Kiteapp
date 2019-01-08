@@ -974,7 +974,55 @@
 			<fact name="twintip">no</fact>
 		</then>
 	</rule>
-
+	
+	<rule>
+		<description>To make sure no other kind off wetsuits are shown</description>
+		<if>
+			<fact name="tempBelow0">yes</fact>	
+		</if>
+		<then>
+			<fact name="temp0-10">no</fact>
+			<fact name="temp10-20">no</fact>
+			<fact name="temp>20">no</fact>
+		</then>
+	</rule>
+	
+	<rule>
+		<description>To make sure no other kind off wetsuits are shown</description>
+		<if>
+			<fact name="temp0-10">yes</fact>	
+		</if>
+		<then>
+			<fact name="tempBelow0">no</fact>
+			<fact name="temp10-20">no</fact>
+			<fact name="temp>20">no</fact>
+		</then>
+	</rule>
+	
+		<rule>
+		<description>To make sure no other kind off wetsuits are shown</description>
+		<if>
+			<fact name="temp10-20">yes</fact>	
+		</if>
+		<then>
+			<fact name="tempBelow0">no</fact>
+			<fact name="temp0-10">no</fact>
+			<fact name="temp>20">no</fact>
+		</then>
+	</rule>
+	
+	<rule>
+		<description>To make sure no other kind off wetsuits are shown</description>
+		<if>
+			<fact name="temp>20">yes</fact>	
+		</if>
+		<then>
+			<fact name="tempBelow0">no</fact>
+			<fact name="temp0-10">no</fact>
+			<fact name="temp10-20">no</fact>
+		</then>
+	</rule>
+	
 
 
 
@@ -987,35 +1035,23 @@
 			<description>Below 0 degrees</description>
 			<then>
 				<fact name="tempBelow0">yes</fact>
-				<fact name="temp0-10">no</fact>
-				<fact name="temp10-20">no</fact>
-				<fact name="temp>20">no</fact>
 			</then>
 		</option>
 		<option>
 			<description>Between 0 and 10 degrees</description>
 			<then>
-				<fact name="tempBelow0">no</fact>
 				<fact name="temp0-10">yes</fact>
-				<fact name="temp10-20">no</fact>
-				<fact name="temp>20">no</fact>
 			</then>
 		</option>
 		<option>
 			<description>Between 10 and 20 degrees</description>
 			<then>
-				<fact name="tempBelow0">no</fact>
-				<fact name="temp0-10">no</fact>
 				<fact name="temp10-20">yes</fact>
-				<fact name="temp>20">no</fact>
 			</then>
 		</option>
 		<option>
 			<description>Above 20 degrees</description>
 			<then>
-				<fact name="tempBelow0">no</fact>
-				<fact name="temp0-10">no</fact>
-				<fact name="temp10-20">no</fact>
 				<fact name="temp>20">yes</fact>
 			</then>
 		</option>

@@ -1312,6 +1312,26 @@
 		<description>Kiting:</description>
 		<answer value="no">With these conditions and your experience no kiting is possible today.</answer>
 	</goal>
+	
+		<!-- #### Wetsuit ####-->
+
+	
+	<goal name="tooCold">
+		<description>Wetsuit:</description>
+		<answer value="yes">We would advice you to not go kitesurfing with this temperature. When you do, don't go alone! If you think you are prepared enough choose the gear below.</answer>
+	</goal>
+	<goal name="winterSuit">
+		<description>Wetsuit:</description>
+		<answer value="yes">Wear a full body wintersuit ( 6/5 or 5/3 ) with neoprene shoes, gloves and a cap</answer>
+	</goal>
+	<goal name="normalSuit">
+		<description>Wetsuit:</description>
+		<answer value="yes">Wear a full body suit ( 4/3 )</answer>
+	</goal>
+	<goal name="shorty">
+		<description>Wetsuit:</description>
+		<answer value="yes">Wear a short sleeved suit ( 3/2 ) </answer>
+	</goal>
 
 	<!-- #### Boards ####-->
 	
@@ -1328,84 +1348,6 @@
 	<goal name="hydrofoil">
 		<description>Can you use a hydrofoil?</description>
 		<answer value="no">A hydrofoil is a board that contains a wing in the water below the board. For hydrofoiling you need to have a lot of experience in kitesurfing and a spot which is deeper than 1,5 meter. One of this requirements fails at the moment. To see how hydrofoiling works, have a look at the link at the top-left corner. </answer>
-	</goal>
-
-	<!--<goal name="cold">
-		<description>Wetsuit:</description>
-		<answer value="no">Short sleeves and a thickness of 3/2</answer>
-		<answer value="yes">long sleeves and a thickness of 5/4</answer>
-		<answer value="undefined">long sleeves and a thickness of 4/3</answer>
-	</goal>-->
-
-	<!-- #### Wetsuit ####-->
-
-	
-	<goal name="tooCold">
-		<description>Wetsuit:</description>
-		<answer value="yes">We would advice you to not go kitesurfing with this temperature. When you do, don't go alone! If you think you are prepared enough choose gear below.</answer>
-	</goal>
-	<goal name="winterSuit">
-		<description>Wetsuit:</description>
-		<answer value="yes">Wear a full body wintersuit ( 6/5 or 5/3 ) with neoprene shoes, gloves and a cap</answer>
-	</goal>
-	<goal name="normalSuit">
-		<description>Wetsuit:</description>
-		<answer value="yes">Wear a full body suit ( 4/3 )</answer>
-	</goal>
-	<goal name="shorty">
-		<description>Wetsuit:</description>
-		<answer value="yes">Wear a short sleeved suit ( 3/2 ) </answer>
-	</goal>
-
-	<!-- #### Kite for foiling ####-->
-
-
-		<goal name="kite_to_foil_6">
-		<description>Kite size to choose for hydrofoil:</description>
-		<answer value="yes">6m2</answer>
-	</goal>
-		<goal name="kite_to_foil_7">
-		<description>Kite size to choose for hydrofoil:</description>
-		<answer value="yes">7m2</answer>
-	</goal>
-		<goal name="kite_to_foil_8">
-		<description>Kite size to choose for hydrofoil:</description>
-		<answer value="yes">8m2</answer>
-	</goal>
-		<goal name="kite_to_foil_9">
-		<description>Kite size to choose for hydrofoil:</description>
-		<answer value="yes">9m2</answer>
-	</goal>
-		<goal name="kite_to_foil_10">
-		<description>Kite size to choose for hydrofoil:</description>
-		<answer value="yes">10m2</answer>
-	</goal>
-
-	<!-- #### Kite for strapless ####-->
-
-		<goal name="kite_for_strapless_8">
-		<description>Kite size to choose for strapless:</description>
-		<answer value="yes">8m2</answer>
-	</goal>
-		<goal name="kite_for_strapless_9">
-		<description>Kite size to choose for strapless:</description>
-		<answer value="yes">9m2</answer>
-	</goal>
-		<goal name="kite_for_strapless_10">
-		<description>Kite size to choose for strapless:</description>
-		<answer value="yes">10m2</answer>
-	</goal>
-		<goal name="kite_for_strapless_11">
-		<description>Kite size to choose for strapless:</description>
-		<answer value="yes">11m2</answer>
-	</goal>
-		<goal name="kite_for_strapless_12">
-		<description>Kite size to choose for strapless:</description>
-		<answer value="yes">12m2</answer>
-	</goal>
-		<goal name="kite_for_strapless_13">
-		<description>Kite size to choose for strapless:</description>
-		<answer value="yes">13m2</answer>
 	</goal>
 
 	<!-- #### Kite for twintip ####-->
@@ -1449,5 +1391,58 @@
 		<goal name="kite15">
 		<description>Kite size to choose for twintip:</description>
 		<answer value="yes">15m2</answer>
+	</goal>
+	
+	<!-- #### Kite for strapless ####-->
+
+		<goal name="kite_for_strapless_8">
+		<description>Kite size to choose for strapless:</description>
+		<answer value="yes">8m2</answer>
+	</goal>
+		<goal name="kite_for_strapless_9">
+		<description>Kite size to choose for strapless:</description>
+		<answer value="yes">9m2</answer>
+	</goal>
+		<goal name="kite_for_strapless_10">
+		<description>Kite size to choose for strapless:</description>
+		<answer value="yes">10m2</answer>
+	</goal>
+		<goal name="kite_for_strapless_11">
+		<description>Kite size to choose for strapless:</description>
+		<answer value="yes">11m2</answer>
+	</goal>
+		<goal name="kite_for_strapless_12">
+		<description>Kite size to choose for strapless:</description>
+		<answer value="yes">12m2</answer>
+	</goal>
+		<goal name="kite_for_strapless_13">
+		<description>Kite size to choose for strapless:</description>
+		<answer value="yes">13m2</answer>
+	</goal>
+
+	
+	
+	<!-- #### Kite for foiling ####-->
+
+
+		<goal name="kite_to_foil_6">
+		<description>Kite size to choose for hydrofoil:</description>
+		<answer value="yes">6m2</answer>
+	</goal>
+		<goal name="kite_to_foil_7">
+		<description>Kite size to choose for hydrofoil:</description>
+		<answer value="yes">7m2</answer>
+	</goal>
+		<goal name="kite_to_foil_8">
+		<description>Kite size to choose for hydrofoil:</description>
+		<answer value="yes">8m2</answer>
+	</goal>
+		<goal name="kite_to_foil_9">
+		<description>Kite size to choose for hydrofoil:</description>
+		<answer value="yes">9m2</answer>
+	</goal>
+		<goal name="kite_to_foil_10">
+		<description>Kite size to choose for hydrofoil:</description>
+		<answer value="yes">10m2</answer>
 	</goal>
 </knowledge>

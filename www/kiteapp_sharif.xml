@@ -1000,23 +1000,35 @@
 			<description>Below 0 degrees</description>
 			<then>
 				<fact name="temp0">yes</fact>
+				<fact name="temp010">no</fact>
+				<fact name="temp1020">no</fact>
+				<fact name="temp20">no</fact>
 			</then>
 		</option>
 		<option>
 			<description>Between 0 and 10 degrees</description>
 			<then>
+				<fact name="temp0">no</fact>
 				<fact name="temp010">yes</fact>
+				<fact name="temp1020">no</fact>
+				<fact name="temp20">no</fact>
 			</then>
 		</option>
 		<option>
 			<description>Between 10 and 20 degrees</description>
 			<then>
+				<fact name="temp0">no</fact>
+				<fact name="temp010">no</fact>
 				<fact name="temp1020">yes</fact>
+				<fact name="temp20">no</fact>
 			</then>
 		</option>
 		<option>
 			<description>Above 20 degrees</description>
 			<then>
+				<fact name="temp0">no</fact>
+				<fact name="temp010">no</fact>
+				<fact name="temp1020">no</fact>
 				<fact name="temp20">yes</fact>
 			</then>
 		</option>

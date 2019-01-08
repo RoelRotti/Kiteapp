@@ -1041,7 +1041,7 @@
 	
 	
 	<question>
-		<description>What is the air temperature?</description>
+		<description>What is the air temperature today?</description>
 		<option>
 			<description>Below 0 degrees</description>
 			<then>
@@ -1101,7 +1101,7 @@
 			</then>
 		</option>
 		<option>
-			<description>Rookie (8-20 kitesessions)</description>
+			<description>Rookie (8-30 kitesessions)</description>
 			<then>
 				<fact name="brookie">no</fact>
 				<fact name="rookie">no</fact>
@@ -1110,7 +1110,7 @@
 			</then>
 		</option>
 		<option>
-			<description>Experienced (more than 20 kitesessions)</description>
+			<description>Advanced (more than 30 kitesessions)</description>
 			<then>
 				<fact name="brookie">no</fact>
 				<fact name="rookie">no</fact>
@@ -1122,7 +1122,7 @@
 
 	
 	<question>
-		<description>What is the depth of the spot?</description>
+		<description>What is the depth of the spot where you are going to kite today?</description>
 		<option>
 			<description>Deeper than 1,5m</description>
 			<then>
@@ -1139,7 +1139,7 @@
 
 
 	<question>
-		<description>Will you kite on sea / conditions with waves?</description>
+		<description>Will you kite on sea / conditions with waves today?</description>
 		<option>
 			<description>Yes</description>
 			<then>
@@ -1185,7 +1185,7 @@
 	
 	
 	<question>
-		<description>How strong is the wind? (in knots)</description>
+		<description>How strong is the wind on average today? (in knots)</description>
 		<option>
 			<description>0-8 knots</description>
 			<then>
@@ -1339,7 +1339,7 @@
 	</goal>
 	<goal name="winterSuit">
 		<description>Wetsuit:</description>
-		<answer value="yes">Wear a full body wintersuit ( 6/5 or 5/3 ) with neoprene shoes, gloves and a cap</answer>
+		<answer value="yes">Wear a full body wintersuit ( 6/5 till 5/3 ) with neoprene shoes, gloves and a cap</answer>
 	</goal>
 	<goal name="normalSuit">
 		<description>Wetsuit:</description>

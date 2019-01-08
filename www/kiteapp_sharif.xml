@@ -92,10 +92,10 @@
 				<fact name="weight70">yes</fact>
 				<fact name="seaChoppy">yes</fact>
 				<not>
-					<and>
+					<or>
 						<fact name="brookie">yes</fact>
 						<fact name="rookie">yes</fact>
-					</and>
+					</or>
 				</not>
 			</and>		
 		</if>
@@ -112,10 +112,10 @@
 				<fact name="weight70">yes</fact>
 				<fact name="seaChoppy">yes</fact>
 				<not>
-					<and>
+					<or>
 						<fact name="brookie">yes</fact>
 						<fact name="rookie">yes</fact>
-					</and>
+					</or>
 				</not>
 			</and>		
 		</if>
@@ -219,10 +219,10 @@
 				<fact name="weight90">yes</fact>
 				<fact name="seaChoppy">yes</fact>
 				<not>
-					<and>
+					<or>
 						<fact name="brookie">yes</fact>
 						<fact name="rookie">yes</fact>
-					</and>
+					</or>
 				</not>
 			</and>		
 		</if>
@@ -239,10 +239,10 @@
 				<fact name="weight90">yes</fact>
 				<fact name="seaChoppy">yes</fact>
 				<not>
-					<and>
+					<or>
 						<fact name="brookie">yes</fact>
 						<fact name="rookie">yes</fact>
-					</and>
+					</or>
 				</not>
 			</and>		
 		</if>
@@ -259,10 +259,10 @@
 				<fact name="weight90">yes</fact>
 				<fact name="seaChoppy">yes</fact>
 				<not>
-					<and>
+					<or>
 						<fact name="brookie">yes</fact>
 						<fact name="rookie">yes</fact>
-					</and>
+					</or>
 				</not>
 			</and>		
 		</if>
@@ -352,10 +352,10 @@
 				<fact name="weight100">yes</fact>
 				<fact name="seaChoppy">yes</fact>
 				<not>
-					<and>
+					<or>
 						<fact name="brookie">yes</fact>
 						<fact name="rookie">yes</fact>
-					</and>
+					</or>
 				</not>
 			</and>		
 		</if>
@@ -372,10 +372,10 @@
 				<fact name="weight100">yes</fact>
 				<fact name="seaChoppy">yes</fact>
 				<not>
-					<and>
+					<or>
 						<fact name="brookie">yes</fact>
 						<fact name="rookie">yes</fact>
-					</and>
+					</or>
 				</not>
 			</and>		
 		</if>
@@ -392,10 +392,10 @@
 				<fact name="weight100">yes</fact>
 				<fact name="seaChoppy">yes</fact>
 				<not>
-					<and>
+					<or>
 						<fact name="brookie">yes</fact>
 						<fact name="rookie">yes</fact>
-					</and>
+					</or>
 				</not>
 			</and>		
 		</if>
@@ -488,10 +488,10 @@
 				<fact name="weight70">yes</fact>
 				<fact name="seaChoppy">no</fact>
 				<not>
-					<and>
+					<or>
 						<fact name="brookie">yes</fact>
 						<fact name="rookie">yes</fact>
-					</and>
+					</or>
 				</not>
 			</and>		
 		</if>
@@ -508,10 +508,10 @@
 				<fact name="weight70">yes</fact>
 				<fact name="seaChoppy">no</fact>
 				<not>
-					<and>
+					<or>
 						<fact name="brookie">yes</fact>
 						<fact name="rookie">yes</fact>
-					</and>
+					</or>
 				</not>
 			</and>		
 		</if>
@@ -614,10 +614,10 @@
 				<fact name="weight90">yes</fact>
 				<fact name="seaChoppy">no</fact>
 				<not>
-					<and>
+					<or>
 						<fact name="brookie">yes</fact>
 						<fact name="rookie">yes</fact>
-					</and>
+					</or>
 				</not>
 			</and>		
 		</if>
@@ -634,10 +634,10 @@
 				<fact name="weight90">yes</fact>
 				<fact name="seaChoppy">no</fact>
 				<not>
-					<and>
+					<or>
 						<fact name="brookie">yes</fact>
 						<fact name="rookie">yes</fact>
-					</and>
+					</or>
 				</not>
 			</and>		
 		</if>
@@ -654,10 +654,10 @@
 				<fact name="weight90">yes</fact>
 				<fact name="seaChoppy">no</fact>
 				<not>
-					<and>
+					<or>
 						<fact name="brookie">yes</fact>
 						<fact name="rookie">yes</fact>
-					</and>
+					</or>
 				</not>
 			</and>		
 		</if>
@@ -746,10 +746,10 @@
 				<fact name="weight100">yes</fact>
 				<fact name="seaChoppy">no</fact>
 				<not>
-					<and>
+					<or>
 						<fact name="brookie">yes</fact>
 						<fact name="rookie">yes</fact>
-					</and>
+					</or>
 				</not>
 			</and>		
 		</if>
@@ -766,10 +766,10 @@
 				<fact name="weight100">yes</fact>
 				<fact name="seaChoppy">no</fact>
 				<not>
-					<and>
+					<or>
 						<fact name="brookie">yes</fact>
 						<fact name="rookie">yes</fact>
-					</and>
+					</or>
 				</not>
 			</and>		
 		</if>
@@ -786,10 +786,10 @@
 				<fact name="weight100">yes</fact>
 				<fact name="seaChoppy">no</fact>
 				<not>
-					<and>
+					<or>
 						<fact name="brookie">yes</fact>
 						<fact name="rookie">yes</fact>
-					</and>
+					</or>
 				</not>
 			</and>		
 		</if>

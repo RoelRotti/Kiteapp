@@ -982,9 +982,9 @@
 		</if>
 		<then>
 			<fact name="tooCold">yes</fact>
-			<fact name="winterSuit">no</fact>
-			<fact name="normalSuit">no</fact>
-			<fact name="shorty">no</fact>
+			<fact name="winterSuit">undefined</fact>
+			<fact name="normalSuit">undefined</fact>
+			<fact name="shorty">undefined</fact>
 		</then>
 	</rule>
 	
@@ -994,10 +994,10 @@
 			<fact name="temp0-10">yes</fact>	
 		</if>
 		<then>
-			<fact name="tooCold">no</fact>
+			<fact name="tooCold">undefined</fact>
 			<fact name="winterSuit">yes</fact>
-			<fact name="normalSuit">no</fact>
-			<fact name="shorty">no</fact>
+			<fact name="normalSuit">undefined</fact>
+			<fact name="shorty">undefined</fact>
 			
 		</then>
 	</rule>
@@ -1008,10 +1008,10 @@
 			<fact name="temp10-20">yes</fact>	
 		</if>
 		<then>
-			<fact name="tooCold">no</fact>
-			<fact name="winterSuit">no</fact>
+			<fact name="tooCold">undefined</fact>
+			<fact name="winterSuit">undefined</fact>
 			<fact name="normalSuit">yes</fact>
-			<fact name="shorty">no</fact>
+			<fact name="shorty">undefined</fact>
 		</then>
 	</rule>
 	
@@ -1021,9 +1021,9 @@
 			<fact name="temp>20">yes</fact>	
 		</if>
 		<then>
-			<fact name="tooCold">no</fact>
-			<fact name="winterSuit">no</fact>
-			<fact name="normalSuit">no</fact>
+			<fact name="tooCold">undefined</fact>
+			<fact name="winterSuit">undefined</fact>
+			<fact name="normalSuit">undefined</fact>
 			<fact name="shorty">yes</fact>
 		</then>
 	</rule>

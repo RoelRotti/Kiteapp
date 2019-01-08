@@ -1342,7 +1342,7 @@
 	
 	<goal name="tooCold">
 		<description>Wetsuit:</description>
-		<answer value="yes">It is too cold to go kitesurfing</answer>
+		<answer value="yes">We would advice you to not go kitesurfing with this temperature. When you do, don't go alone! If you think you are prepared enough choose gear below.</answer>
 	</goal>
 	<goal name="winterSuit">
 		<description>Wetsuit:</description>

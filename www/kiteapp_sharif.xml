@@ -21,7 +21,7 @@
 			<fact name="kite">no</fact>
 		</then>
 	</rule>	
-	
+		
 	<rule>
 		<description>8-12 knots and above 70 kg = no kiting</description>
 		<if>
@@ -1121,6 +1121,9 @@
 		<if>
 			<and>
 				<fact name="temp0">yes</fact>	
+				<not>
+					<fact name="kite">no</fact>
+				</not>
 			</and>
 		</if>
 		<then>
@@ -1133,6 +1136,9 @@
 		<if>
 			<and>
 				<fact name="temp010">yes</fact>	
+				<not>
+					<fact name="kite">no</fact>
+				</not>
 			</and>
 		</if>
 		<then>
@@ -1145,6 +1151,9 @@
 		<if>
 			<and>
 				<fact name="temp1020">yes</fact>
+				<not>
+					<fact name="kite">no</fact>
+				</not>
 			</and>	
 		</if>
 		<then>
@@ -1158,6 +1167,9 @@
 		<if>
 			<and>
 				<fact name="temp20">yes</fact>	
+				<not>
+					<fact name="kite">no</fact>
+				</not>
 			</and>	
 		</if>
 		<then>

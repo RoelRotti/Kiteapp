@@ -1119,11 +1119,21 @@
 	<rule>
 		<description>To make sure no other kind off wetsuits are shown</description>
 		<if>
+			<fact name="kite">no</fact>	
+		</if>
+		<then>
+			<fact name="temp0">undefined</fact>
+			<fact name="temp010">undefined</fact>
+			<fact name="temp1020">undefined</fact>
+			<fact name="temp20">undefined</fact>
+		</then>
+	</rule>	
+		
+	<rule>
+		<description>To make sure no other kind off wetsuits are shown</description>
+		<if>
 			<and>
 				<fact name="temp0">yes</fact>	
-				<not>
-					<fact name="kite">no</fact>
-				</not>
 			</and>
 		</if>
 		<then>
@@ -1136,9 +1146,7 @@
 		<if>
 			<and>
 				<fact name="temp010">yes</fact>	
-				<not>
-					<fact name="kite">no</fact>
-				</not>
+
 			</and>
 		</if>
 		<then>
@@ -1151,9 +1159,7 @@
 		<if>
 			<and>
 				<fact name="temp1020">yes</fact>
-				<not>
-					<fact name="kite">no</fact>
-				</not>
+
 			</and>	
 		</if>
 		<then>
@@ -1166,10 +1172,7 @@
 		<description>To make sure no other kind off wetsuits are shown</description>
 		<if>
 			<and>
-				<fact name="temp20">yes</fact>	
-				<not>
-					<fact name="kite">no</fact>
-				</not>
+				<fact name="temp20">yes</fact>
 			</and>	
 		</if>
 		<then>

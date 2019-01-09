@@ -88,11 +88,6 @@ foreach ($state->goals as $goal)
 			->dependingGoals
 			->push($goal);
 
-foreach($state->fact_name as $i)
-	print("$i");
-	
-die();	
-
 $template = new Template('templates/analyse.phtml');
 $template->kb = $state;
 $template->stats = $stats;

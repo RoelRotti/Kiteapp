@@ -1147,7 +1147,7 @@
 		<if>
 			<and>
 				<fact name="temp1020">yes</fact>
-				<fact name="kite">no</fact>
+				<fact name="kite">undefined</fact>
 			</and>	
 		</if>
 		<then>
@@ -1161,7 +1161,7 @@
 		<if>
 			<and>
 				<fact name="temp20">yes</fact>	
-				<fact name="kite">yes</fact>
+				<fact name="kite">undefined</fact>
 			</and>	
 		</if>
 		<then>

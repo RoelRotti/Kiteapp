@@ -1122,10 +1122,10 @@
 			<fact name="kite">no</fact>	
 		</if>
 		<then>
-			<fact name="temp0">undefined</fact>
-			<fact name="temp010">undefined</fact>
-			<fact name="temp1020">undefined</fact>
-			<fact name="temp20">undefined</fact>
+			<fact name="tooCold">undefined</fact>
+			<fact name="winterSuit">undefined</fact>
+			<fact name="normalSuit">undefined</fact>
+			<fact name="shorty">undefined</fact>
 		</then>
 	</rule>	
 		

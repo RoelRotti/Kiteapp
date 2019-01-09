@@ -7,10 +7,6 @@
 
 
 <!-- #################################### RULES #################################### -->
-
-	<!-- ###### Twintip + Waves ###### -->
-
-	<!-- #### Kitechoice (twintip + waves): below 70 kg #### -->
 	
 	<rule>
 		<description>below 8 knots = no kiting</description>
@@ -19,6 +15,7 @@
 		</if>
 		<then>
 			<fact name="kite">no</fact>
+			<fact name="twintip">no</fact>
 		</then>
 	</rule>	
 		
@@ -35,6 +32,7 @@
 		</if>
 		<then>
 			<fact name="kite">no</fact>
+			<fact name="twintip">no</fact>
 		</then>
 	</rule>	
 	
@@ -163,6 +161,7 @@
 		</if>
 		<then>
 			<fact name="kite">no</fact>
+			<fact name="twintip">no</fact>
 		</then>
 	</rule>	
 
@@ -179,6 +178,7 @@
 		</if>
 		<then>
 			<fact name="kite">no</fact>
+			<fact name="twintip">no</fact>
 		</then>
 	</rule>	
 	
@@ -312,6 +312,7 @@
 		</if>
 		<then>
 			<fact name="kite">no</fact>
+			<fact name="twintip">no</fact>
 		</then>
 	</rule>	
 	
@@ -326,6 +327,7 @@
 		</if>
 		<then>
 			<fact name="kite">no</fact>
+			<fact name="twintip">no</fact>
 		</then>
 	</rule>	
 	
@@ -559,6 +561,7 @@
 		</if>
 		<then>
 			<fact name="kite">no</fact>
+			<fact name="twintip">no</fact>
 		</then>
 	</rule>	
 
@@ -575,6 +578,7 @@
 		</if>
 		<then>
 			<fact name="kite">no</fact>
+			<fact name="twintip">no</fact>
 		</then>
 	</rule>	
 	
@@ -707,6 +711,7 @@
 		</if>
 		<then>
 			<fact name="kite">no</fact>
+			<fact name="twintip">no</fact>
 		</then>
 	</rule>	
 	
@@ -721,6 +726,7 @@
 		</if>
 		<then>
 			<fact name="kite">no</fact>
+			<fact name="twintip">no</fact>
 		</then>
 	</rule>	
 	

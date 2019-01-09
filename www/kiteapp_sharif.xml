@@ -1115,21 +1115,6 @@
 			<fact name="twintip">no</fact>
 		</then>
 	</rule>
-		
-	<rule>
-		<description>To make sure no kind off wetsuits are shown</description>
-		<if>
-			<and>
-				<fact name="kite">no</fact>
-			</and>
-		</if>
-		<then>
-			<fact name="temp0">no</fact>
-			<fact name="temp010">no</fact>
-			<fact name="temp1020">no</fact>
-			<fact name="temp20">no</fact>
-		</then>
-	</rule>
 	
 	<rule>
 		<description>To make sure no other kind off wetsuits are shown</description>

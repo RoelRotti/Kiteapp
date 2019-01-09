@@ -947,7 +947,6 @@
 				</or>	
 				<or>
 					<fact name="wind8">yes</fact>
-					<fact name="wind30">yes</fact>
 					<fact name="wind35">yes</fact>
 					<fact name="wind40">yes</fact>
 					<fact name="wind50">yes</fact>
@@ -971,7 +970,6 @@
 				</and>
 				<or>
 					<fact name="wind8">yes</fact>
-					<fact name="wind30">yes</fact>
 					<fact name="wind35">yes</fact>
 					<fact name="wind40">yes</fact>
 					<fact name="wind50">yes</fact>

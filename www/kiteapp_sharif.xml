@@ -1465,7 +1465,7 @@
 
 	<goal name="kite">
 		<description>Kiting:</description>
-		<answer value="no">No! With these conditions and your experience no kiting is possible today. The wind is to strong or to hard for you today to have a safe ride!</answer>
+		<answer value="no">No! With these conditions and your experience no kiting is possible today. The wind is to strong or to soft for you today to have a safe ride!</answer>
 	</goal>
 	
 		<!-- #### Wetsuit ####-->

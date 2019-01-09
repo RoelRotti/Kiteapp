@@ -11,6 +11,34 @@
 	<!-- ###### Twintip + Waves ###### -->
 
 	<!-- #### Kitechoice (twintip + waves): below 70 kg #### -->
+	
+	<rule>
+		<description>below 8 knots = no kiting</description>
+		<if>
+			<fact name="wind8">yes</fact>					
+		</if>
+		<then>
+			<fact name="kite">no</fact>
+		</then>
+	</rule>	
+	
+	<rule>
+		<description>8-12 knots and above 70 kg = no kiting</description>
+		<if>
+			<and>
+				<fact name="wind12">yes</fact>	
+				<or>
+					<fact name="weight90">yes</fact>
+					<fact name="weight100">yes</fact>
+				</or>
+			</and>
+		</if>
+		<then>
+			<fact name="kite">no</fact>
+		</then>
+	</rule>	
+	
+	
 
 	
 	<rule>

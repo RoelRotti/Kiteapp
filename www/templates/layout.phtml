@@ -9,35 +9,35 @@
 			<a href="<?=$this->attr($_SERVER['REQUEST_URI'])?>">Start over</a>
 			<!--<a href="analyse.php?kb=<?=rawurlencode($_GET['kb'])?>">Analyse</a>
 			<a href="index.php">Upload</a>-->
-			<a href="#debug">Debug</a>
+			<!--<a href="#debug">Debug</a>-->
 		</nav>
 		<header>
 			<h1><?=$this->html($domain->title)?></h1>
 			<p><?=$domain->description?></p>
 		</header>
-		<div>
+		<div style="width:70%">
 			<form method="post">
 				<input type="hidden" name="state" value="<?=_encode($state) ?>">
 				<input type="hidden" name="log" value="<?=_encode($log) ?>">
 				<?=$content?>
 			</form>
 		</div>
-		<aside id="debug-info">
+		<aside id="debug-info" style = "width:30%; float:right; display:inline-block;">
 			<section class="state-info fact-state">
 				<h3>Facts</h3>
 				<dl>
 					<?php foreach($state->facts as $name => $value): ?>
+					<?php if($value == 'yes'){?>
 					<dt><?=$name?></dt>
 					<dd>
-						<?=$this->html($value)?>
-						<?php if (KnowledgeState::is_variable($value) && $state->resolve($value) != $value): ?>
-							<small><?=$this->html($state->resolve($value)) ?></small>
-						<?php endif ?>
+
+								<?=$this->html($value)?>
 					</dd>
+					<?php } ?>
 					<?php endforeach ?>
 				</dl>
 			</section>
-			
+			<!--
 			<section class="state-info goal-stack">
 				<h3>Goal stack</h3>
 				<ol>
@@ -77,6 +77,7 @@
 				<?php endforeach ?>
 				</ol>
 			</section>
+		-->
 		</aside>
 
 		<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>

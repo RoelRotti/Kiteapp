@@ -1487,7 +1487,7 @@
 
 	<goal name="windTooSoft">
 		<description>Kiting:</description>
-		<answer value="yes">No! The wind is too soft for your experience and weight today.</answer>
+		<answer value="yes">No! The wind is too soft for your weight today.</answer>
 	</goal>
 
 	<goal name="windTooHard">

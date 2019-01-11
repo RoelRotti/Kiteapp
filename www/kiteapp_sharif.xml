@@ -15,6 +15,7 @@
 		</if>
 		<then>
 			<fact name="kite">no</fact>
+			<fact name="windTooSoft">yes</fact>
 			<fact name="twintip">no</fact>
 		</then>
 	</rule>	
@@ -32,6 +33,7 @@
 		</if>
 		<then>
 			<fact name="kite">no</fact>
+			<fact name="windTooSoft">yes</fact>
 			<fact name="twintip">no</fact>
 		</then>
 	</rule>	
@@ -161,6 +163,7 @@
 		</if>
 		<then>
 			<fact name="kite">no</fact>
+			<fact name="windTooHard">yes</fact>
 			<fact name="twintip">no</fact>
 		</then>
 	</rule>	
@@ -178,6 +181,7 @@
 		</if>
 		<then>
 			<fact name="kite">no</fact>
+			<fact name="windTooSoft">yes</fact>
 			<fact name="twintip">no</fact>
 		</then>
 	</rule>	
@@ -312,6 +316,7 @@
 		</if>
 		<then>
 			<fact name="kite">no</fact>
+			<fact name="windTooSoft">yes</fact>
 			<fact name="twintip">no</fact>
 		</then>
 	</rule>	
@@ -327,6 +332,7 @@
 		</if>
 		<then>
 			<fact name="kite">no</fact>
+			<fact name="windTooSoft">yes</fact>
 			<fact name="twintip">no</fact>
 		</then>
 	</rule>	
@@ -561,6 +567,7 @@
 		</if>
 		<then>
 			<fact name="kite">no</fact>
+			<fact name="windTooHard">yes</fact>
 			<fact name="twintip">no</fact>
 		</then>
 	</rule>	
@@ -578,6 +585,7 @@
 		</if>
 		<then>
 			<fact name="kite">no</fact>
+			<fact name="windTooSoft">yes</fact>
 			<fact name="twintip">no</fact>
 		</then>
 	</rule>	
@@ -711,6 +719,7 @@
 		</if>
 		<then>
 			<fact name="kite">no</fact>
+			<fact name="windTooSoft">yes</fact>
 			<fact name="twintip">no</fact>
 		</then>
 	</rule>	
@@ -726,6 +735,7 @@
 		</if>
 		<then>
 			<fact name="kite">no</fact>
+			<fact name="windTooSoft">yes</fact>
 			<fact name="twintip">no</fact>
 		</then>
 	</rule>	
@@ -1082,7 +1092,7 @@
 	<!-- #### level:beginner: wind too hard to go kiting #### -->
 	
 	<rule>
-		<description>For the level:level:beginner, this wind is to hard to go kitesurfing even on a twintip</description>
+		<description>For the level:beginner, this wind is too hard to go kitesurfing even on a twintip</description>
 		<if>
 			<and>
 				<fact name="level:beginner">yes</fact>	
@@ -1096,6 +1106,7 @@
 		</if>
 		<then>
 			<fact name="kite">no</fact>
+			<fact name="windTooHard">yes</fact>
 			<fact name="twintip">no</fact>
 		</then>
 	</rule>	
@@ -1103,7 +1114,7 @@
 	<!-- #### level:brookie: wind too hard to go kiting #### -->
 	
 	<rule>
-		<description>For the level:level:brookie, this wind is to hard to go kitesurfing even on a twintip</description>
+		<description>For the level:brookie, this wind is too hard to go kitesurfing even on a twintip</description>
 		<if>
 			<and>
 				<fact name="level:brookie">yes</fact>	
@@ -1116,6 +1127,7 @@
 		</if>
 		<then>
 			<fact name="kite">no</fact>
+			<fact name="windTooHard">yes</fact>
 			<fact name="twintip">no</fact>
 		</then>
 	</rule>
@@ -1470,6 +1482,16 @@
 	<goal name="kite">
 		<description>Kiting:</description>
 		<answer value="no">No! With these conditions and your experience no kiting is possible today. The wind is too strong or too soft for you today to have a safe ride!</answer>
+	</goal>
+
+	<goal name="windTooSoft">
+		<description>Kiting:</description>
+		<answer value="yes">No! With these conditions and your experience and weight no kiting is possible today. The wind is too soft for you today.</answer>
+	</goal>
+
+	<goal name="windTooHard">
+		<description>Kiting:</description>
+		<answer value="yes">No! With these conditions and your experience and weight no kiting is possible today. The wind is too hard for you today to have a safe ride!.</answer>
 	</goal>
 	
 		<!-- #### Wetsuit ####-->

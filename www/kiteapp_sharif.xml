@@ -1234,7 +1234,7 @@
 			</then>
 		</option>
 		<option>
-			<description>level:beginner (3-8 kitesessions)</description>
+			<description>Brookie (3-8 kitesessions)</description>
 			<then>
 				<fact name="level:beginner">no</fact>
 				<fact name="level:brookie">yes</fact>
@@ -1243,7 +1243,7 @@
 			</then>
 		</option>
 		<option>
-			<description>level:brookie (8-30 kitesessions)</description>
+			<description>Rrookie (8-30 kitesessions)</description>
 			<then>
 				<fact name="level:beginner">no</fact>
 				<fact name="level:brookie">no</fact>
@@ -1252,7 +1252,7 @@
 			</then>
 		</option>
 		<option>
-			<description>level:rookie (more than 30 kitesessions)</description>
+			<description>Advanced (more than 30 kitesessions)</description>
 			<then>
 				<fact name="level:beginner">no</fact>
 				<fact name="level:brookie">no</fact>

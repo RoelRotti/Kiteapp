@@ -1143,7 +1143,7 @@
 			</and>
 		</if>
 		<then>
-			<fact name="winterSuit">yes</fact>
+			<fact name="fullBodyWintersuit6/5-5/3">yes</fact>
 		</then>
 	</rule>
 	
@@ -1157,7 +1157,7 @@
 			</and>	
 		</if>
 		<then>
-			<fact name="normalSuit">yes</fact>
+			<fact name="fullBodySuit4/3">yes</fact>
 		</then>
 	</rule>
 	
@@ -1171,7 +1171,7 @@
 			</and>	
 		</if>
 		<then>
-			<fact name="shorty">yes</fact>
+			<fact name="Shorty3/2">yes</fact>
 		</then>
 	</rule>
 
@@ -1479,15 +1479,15 @@
 		<description>Wetsuit-for more information see the link in the upper left corner:</description>
 		<answer value="yes">We would advice you to not go kitesurfing with this temperature. When you do, don't go alone! You need a 6/5 wintersuit together with neoprene shoes, gloves and a cap. If you think you are prepared enough choose the rest of the gear below.</answer>
 	</goal>
-	<goal name="winterSuit">
+	<goal name="fullBodyWintersuit6/5-5/3">
 		<description>Wetsuit:</description>
 		<answer value="yes">Wear a full body wintersuit ( 6/5 till 5/3 ) with neoprene shoes, gloves and a cap</answer>
 	</goal>
-	<goal name="normalSuit">
+	<goal name="fullBodySuit4/3">
 		<description>Wetsuit:</description>
 		<answer value="yes">Wear a full body suit ( 4/3 )</answer>
 	</goal>
-	<goal name="shorty">
+	<goal name="Shorty3/2">
 		<description>Wetsuit:</description>
 		<answer value="yes">Wear a short sleeved suit ( 3/2 ) </answer>
 	</goal>

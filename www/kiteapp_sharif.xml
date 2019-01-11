@@ -1243,7 +1243,7 @@
 			</then>
 		</option>
 		<option>
-			<description>Rrookie (8-30 kitesessions)</description>
+			<description>Rookie (8-30 kitesessions)</description>
 			<then>
 				<fact name="level:beginner">no</fact>
 				<fact name="level:brookie">no</fact>

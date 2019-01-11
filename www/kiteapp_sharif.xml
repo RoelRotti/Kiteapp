@@ -1478,20 +1478,21 @@
 
 
 
-
+	<!--
 	<goal name="kite">
 		<description>Kiting:</description>
 		<answer value="no">No! With these conditions and your experience no kiting is possible today. The wind is too strong or too soft for you today to have a safe ride!</answer>
-	</goal>
+	</goal> 
+	-->
 
 	<goal name="windTooSoft">
 		<description>Kiting:</description>
-		<answer value="yes">No! With these conditions and your experience and weight no kiting is possible today. The wind is too soft for you today.</answer>
+		<answer value="yes">No! The wind is too soft for your experience and weight today.</answer>
 	</goal>
 
 	<goal name="windTooHard">
 		<description>Kiting:</description>
-		<answer value="yes">No! With these conditions and your experience and weight no kiting is possible today. The wind is too hard for you today to have a safe ride!.</answer>
+		<answer value="yes">No! The wind is too hard for your experience and weight today to have a safe ride!.</answer>
 	</goal>
 	
 		<!-- #### Wetsuit ####-->

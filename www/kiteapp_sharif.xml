@@ -11,7 +11,7 @@
 	<rule>
 		<description>below 8 knots = no kiting</description>
 		<if>
-			<fact name="wind8">yes</fact>					
+			<fact name="wind0-8Knots">yes</fact>					
 		</if>
 		<then>
 			<fact name="kite">no</fact>
@@ -23,10 +23,10 @@
 		<description>8-12 knots and above 70 kg = no kiting</description>
 		<if>
 			<and>
-				<fact name="wind12">yes</fact>	
+				<fact name="wind8-12Knots">yes</fact>	
 				<or>
-					<fact name="weight90">yes</fact>
-					<fact name="weight100">yes</fact>
+					<fact name="weight70-90kg">yes</fact>
+					<fact name="weightAbove90kg">yes</fact>
 				</or>
 			</and>
 		</if>
@@ -43,9 +43,9 @@
 		<description>between 8-12 knots and below 70kg + waves = 15m2</description>
 		<if>
 			<and>
-				<fact name="wind12">yes</fact>				
-				<fact name="weight70">yes</fact>
-				<fact name="seaChoppy">yes</fact>
+				<fact name="wind8-12Knots">yes</fact>				
+				<fact name="weightBelow70kg">yes</fact>
+				<fact name="seaConditions">yes</fact>
 			</and>		
 		</if>
 		<then>
@@ -58,9 +58,9 @@
 		<description>between 15-20 knots and below 70kg + waves = 13m2</description>
 		<if>
 			<and>
-				<fact name="wind15">yes</fact>				
-				<fact name="weight70">yes</fact>
-				<fact name="seaChoppy">yes</fact>
+				<fact name="wind12-15Knots">yes</fact>				
+				<fact name="weightBelow70kg">yes</fact>
+				<fact name="seaConditions">yes</fact>
 			</and>		
 		</if>
 		<then>
@@ -72,9 +72,9 @@
 		<description>between 15-20 knots and below 70kg + waves = 11m2</description>
 		<if>
 			<and>
-				<fact name="wind20">yes</fact>				
-				<fact name="weight70">yes</fact>
-				<fact name="seaChoppy">yes</fact>
+				<fact name="wind15-20Knots">yes</fact>				
+				<fact name="weightBelow70kg">yes</fact>
+				<fact name="seaConditions">yes</fact>
 			</and>		
 		</if>
 		<then>
@@ -86,9 +86,9 @@
 		<description>between 20-25 knots and below 70kg + waves = 10m2</description>
 		<if>
 			<and>
-				<fact name="wind25">yes</fact>				
-				<fact name="weight70">yes</fact>
-				<fact name="seaChoppy">yes</fact>
+				<fact name="wind20-25Knots">yes</fact>				
+				<fact name="weightBelow70kg">yes</fact>
+				<fact name="seaConditions">yes</fact>
 			</and>		
 		</if>
 		<then>
@@ -100,9 +100,9 @@
 		<description>between 25-30 knots and below 70kg + waves = 9m2</description>
 		<if>
 			<and>
-				<fact name="wind30">yes</fact>
-				<fact name="weight70">yes</fact>
-				<fact name="seaChoppy">yes</fact>
+				<fact name="wind25-30Knots">yes</fact>
+				<fact name="weightBelow70kg">yes</fact>
+				<fact name="seaConditions">yes</fact>
 			</and>		
 		</if>
 		<then>
@@ -114,13 +114,13 @@
 		<description>between 30-35 knots and below 70kg + waves = 8m2</description>
 		<if>
 			<and>
-				<fact name="wind35">yes</fact>
-				<fact name="weight70">yes</fact>
-				<fact name="seaChoppy">yes</fact>
+				<fact name="wind30-35Knots">yes</fact>
+				<fact name="weightBelow70kg">yes</fact>
+				<fact name="seaConditions">yes</fact>
 				<not>
 					<or>
-						<fact name="brookie">yes</fact>
-						<fact name="rookie">yes</fact>
+						<fact name="level:beginner">yes</fact>
+						<fact name="level:brookie">yes</fact>
 					</or>
 				</not>
 			</and>		
@@ -134,13 +134,13 @@
 		<description>between 35-40 knots and below 70kg + waves = 7m2</description>
 		<if>
 			<and>
-				<fact name="wind40">yes</fact>
-				<fact name="weight70">yes</fact>
-				<fact name="seaChoppy">yes</fact>
+				<fact name="wind35-40Knots">yes</fact>
+				<fact name="weightBelow70kg">yes</fact>
+				<fact name="seaConditions">yes</fact>
 				<not>
 					<or>
-						<fact name="brookie">yes</fact>
-						<fact name="rookie">yes</fact>
+						<fact name="level:beginner">yes</fact>
+						<fact name="level:brookie">yes</fact>
 					</or>
 				</not>
 			</and>		
@@ -154,9 +154,9 @@
 		<description>above 40 knots and below 70kg = no kitesurfing</description>
 		<if>
 			<and>
-				<fact name="wind50">yes</fact>
-				<fact name="weight70">yes</fact>
-				<fact name="seaChoppy">yes</fact>
+				<fact name="wind40+Knots">yes</fact>
+				<fact name="weightBelow70kg">yes</fact>
+				<fact name="seaConditions">yes</fact>
 			</and>		
 		</if>
 		<then>
@@ -171,9 +171,9 @@
 		<description>between 8-12 knots and between 70-90kg = no kitesurfing</description>
 		<if>
 			<and>
-				<fact name="wind12">yes</fact>
-				<fact name="weight90">yes</fact>
-				<fact name="seaChoppy">yes</fact>
+				<fact name="wind8-12Knots">yes</fact>
+				<fact name="weight70-90kg">yes</fact>
+				<fact name="seaConditions">yes</fact>
 			</and>		
 		</if>
 		<then>
@@ -186,9 +186,9 @@
 		<description>between 12-15 knots and between 70-90kg + waves = 15m2</description>
 		<if>
 			<and>
-				<fact name="wind15">yes</fact>
-				<fact name="weight90">yes</fact>
-				<fact name="seaChoppy">yes</fact>
+				<fact name="wind12-15Knots">yes</fact>
+				<fact name="weight70-90kg">yes</fact>
+				<fact name="seaConditions">yes</fact>
 			</and>		
 		</if>
 		<then>
@@ -201,9 +201,9 @@
 		<description>between 15-20 knots and between 70-90kg + waves = 14m2</description>
 		<if>
 			<and>
-				<fact name="wind20">yes</fact>
-				<fact name="weight90">yes</fact>
-				<fact name="seaChoppy">yes</fact>
+				<fact name="wind15-20Knots">yes</fact>
+				<fact name="weight70-90kg">yes</fact>
+				<fact name="seaConditions">yes</fact>
 			</and>		
 		</if>
 		<then>
@@ -215,9 +215,9 @@
 		<description>between 20-25 knots and between 70-90kg + waves = 12m2</description>
 		<if>
 			<and>
-				<fact name="wind25">yes</fact>
-				<fact name="weight90">yes</fact>
-				<fact name="seaChoppy">yes</fact>
+				<fact name="wind20-25Knots">yes</fact>
+				<fact name="weight70-90kg">yes</fact>
+				<fact name="seaConditions">yes</fact>
 			</and>		
 		</if>
 		<then>
@@ -229,9 +229,9 @@
 		<description>between 25-30 knots and between 70-90kg + waves = 10m2</description>
 		<if>
 			<and>
-				<fact name="wind30">yes</fact>
-				<fact name="weight90">yes</fact>
-				<fact name="seaChoppy">yes</fact>
+				<fact name="wind25-30Knots">yes</fact>
+				<fact name="weight70-90kg">yes</fact>
+				<fact name="seaConditions">yes</fact>
 			</and>		
 		</if>
 		<then>
@@ -243,13 +243,13 @@
 		<description>between 30-35 knots and between 70-90kg + waves = 9m2</description>
 		<if>
 			<and>
-				<fact name="wind35">yes</fact>
-				<fact name="weight90">yes</fact>
-				<fact name="seaChoppy">yes</fact>
+				<fact name="wind30-35Knots">yes</fact>
+				<fact name="weight70-90kg">yes</fact>
+				<fact name="seaConditions">yes</fact>
 				<not>
 					<or>
-						<fact name="brookie">yes</fact>
-						<fact name="rookie">yes</fact>
+						<fact name="level:beginner">yes</fact>
+						<fact name="level:brookie">yes</fact>
 					</or>
 				</not>
 			</and>		
@@ -263,13 +263,13 @@
 		<description>between 35-40 knots and between 70-90kg + waves = 8m2</description>
 		<if>
 			<and>
-				<fact name="wind40">yes</fact>
-				<fact name="weight90">yes</fact>
-				<fact name="seaChoppy">yes</fact>
+				<fact name="wind35-40Knots">yes</fact>
+				<fact name="weight70-90kg">yes</fact>
+				<fact name="seaConditions">yes</fact>
 				<not>
 					<or>
-						<fact name="brookie">yes</fact>
-						<fact name="rookie">yes</fact>
+						<fact name="level:beginner">yes</fact>
+						<fact name="level:brookie">yes</fact>
 					</or>
 				</not>
 			</and>		
@@ -283,13 +283,13 @@
 		<description>above 40 knots and between 70-90kg + waves = 7m2</description>
 		<if>
 			<and>
-				<fact name="wind50">yes</fact>
-				<fact name="weight90">yes</fact>
-				<fact name="seaChoppy">yes</fact>
+				<fact name="wind40+Knots">yes</fact>
+				<fact name="weight70-90kg">yes</fact>
+				<fact name="seaConditions">yes</fact>
 				<not>
 					<or>
-						<fact name="brookie">yes</fact>
-						<fact name="rookie">yes</fact>
+						<fact name="level:beginner">yes</fact>
+						<fact name="level:brookie">yes</fact>
 					</or>
 				</not>
 			</and>		
@@ -305,9 +305,9 @@
 		<description>between 8-12 knots and above 90kg = no kiting possible</description>
 		<if>
 			<and>
-				<fact name="wind12">yes</fact>
-				<fact name="weight100">yes</fact>
-				<fact name="seaChoppy">yes</fact>
+				<fact name="wind8-12Knots">yes</fact>
+				<fact name="weightAbove90kg">yes</fact>
+				<fact name="seaConditions">yes</fact>
 			</and>		
 		</if>
 		<then>
@@ -320,9 +320,9 @@
 		<description>between 12-15 knots and above 90kg = no kiting possible</description>
 		<if>
 			<and>
-				<fact name="wind15">yes</fact>
-				<fact name="weight100">yes</fact>
-				<fact name="seaChoppy">yes</fact>
+				<fact name="wind12-15Knots">yes</fact>
+				<fact name="weightAbove90kg">yes</fact>
+				<fact name="seaConditions">yes</fact>
 			</and>		
 		</if>
 		<then>
@@ -335,9 +335,9 @@
 		<description>between 15-20 knots and above 90kg + waves = 15m2</description>
 		<if>
 			<and>
-				<fact name="wind20">yes</fact>
-				<fact name="weight100">yes</fact>
-				<fact name="seaChoppy">yes</fact>
+				<fact name="wind15-20Knots">yes</fact>
+				<fact name="weightAbove90kg">yes</fact>
+				<fact name="seaConditions">yes</fact>
 			</and>		
 		</if>
 		<then>
@@ -350,9 +350,9 @@
 		<description>between 20-25 knots and above 90kg + waves = 13m2</description>
 		<if>
 			<and>
-				<fact name="wind25">yes</fact>
-				<fact name="weight100">yes</fact>
-				<fact name="seaChoppy">yes</fact>
+				<fact name="wind20-25Knots">yes</fact>
+				<fact name="weightAbove90kg">yes</fact>
+				<fact name="seaConditions">yes</fact>
 			</and>		
 		</if>
 		<then>
@@ -364,9 +364,9 @@
 		<description>between 25-30 knots and above 90kg + waves = 11m2</description>
 		<if>
 			<and>
-				<fact name="wind30">yes</fact>
-				<fact name="weight100">yes</fact>
-				<fact name="seaChoppy">yes</fact>
+				<fact name="wind25-30Knots">yes</fact>
+				<fact name="weightAbove90kg">yes</fact>
+				<fact name="seaConditions">yes</fact>
 			</and>		
 		</if>
 		<then>
@@ -378,13 +378,13 @@
 		<description>between 30-35 knots and above 90kg + waves = 10m2</description>
 		<if>
 			<and>
-				<fact name="wind35">yes</fact>
-				<fact name="weight100">yes</fact>
-				<fact name="seaChoppy">yes</fact>
+				<fact name="wind30-35Knots">yes</fact>
+				<fact name="weightAbove90kg">yes</fact>
+				<fact name="seaConditions">yes</fact>
 				<not>
 					<or>
-						<fact name="brookie">yes</fact>
-						<fact name="rookie">yes</fact>
+						<fact name="level:beginner">yes</fact>
+						<fact name="level:brookie">yes</fact>
 					</or>
 				</not>
 			</and>		
@@ -398,13 +398,13 @@
 		<description>between 35-40 knots and above 90kg + waves = 9m2</description>
 		<if>
 			<and>
-				<fact name="wind40">yes</fact>
-				<fact name="weight100">yes</fact>
-				<fact name="seaChoppy">yes</fact>
+				<fact name="wind35-40Knots">yes</fact>
+				<fact name="weightAbove90kg">yes</fact>
+				<fact name="seaConditions">yes</fact>
 				<not>
 					<or>
-						<fact name="brookie">yes</fact>
-						<fact name="rookie">yes</fact>
+						<fact name="level:beginner">yes</fact>
+						<fact name="level:brookie">yes</fact>
 					</or>
 				</not>
 			</and>		
@@ -418,13 +418,13 @@
 		<description>above 40 knots and above 90kg + waves = 7m2</description>
 		<if>
 			<and>
-				<fact name="wind50">yes</fact>
-				<fact name="weight100">yes</fact>
-				<fact name="seaChoppy">yes</fact>
+				<fact name="wind40+Knots">yes</fact>
+				<fact name="weightAbove90kg">yes</fact>
+				<fact name="seaConditions">yes</fact>
 				<not>
 					<or>
-						<fact name="brookie">yes</fact>
-						<fact name="rookie">yes</fact>
+						<fact name="level:beginner">yes</fact>
+						<fact name="level:brookie">yes</fact>
 					</or>
 				</not>
 			</and>		
@@ -444,9 +444,9 @@
 		<description>between 8-12 knots and below 70kg = 15m2</description>
 		<if>
 			<and>
-				<fact name="wind12">yes</fact>				
-				<fact name="weight70">yes</fact>
-				<fact name="seaChoppy">no</fact>
+				<fact name="wind8-12Knots">yes</fact>				
+				<fact name="weightBelow70kg">yes</fact>
+				<fact name="seaConditions">no</fact>
 			</and>		
 		</if>
 		<then>
@@ -458,9 +458,9 @@
 		<description>between 15-20 knots and below 70kg = 12m2</description>
 		<if>
 			<and>
-				<fact name="wind15">yes</fact>				
-				<fact name="weight70">yes</fact>
-				<fact name="seaChoppy">no</fact>
+				<fact name="wind12-15Knots">yes</fact>				
+				<fact name="weightBelow70kg">yes</fact>
+				<fact name="seaConditions">no</fact>
 			</and>		
 		</if>
 		<then>
@@ -472,9 +472,9 @@
 		<description>between 15-20 knots and below 70kg = 10m2</description>
 		<if>
 			<and>
-				<fact name="wind20">yes</fact>				
-				<fact name="weight70">yes</fact>
-				<fact name="seaChoppy">no</fact>
+				<fact name="wind15-20Knots">yes</fact>				
+				<fact name="weightBelow70kg">yes</fact>
+				<fact name="seaConditions">no</fact>
 			</and>		
 		</if>
 		<then>
@@ -486,9 +486,9 @@
 		<description>between 20-25 knots and below 70kg = 9m2</description>
 		<if>
 			<and>
-				<fact name="wind25">yes</fact>				
-				<fact name="weight70">yes</fact>
-				<fact name="seaChoppy">no</fact>
+				<fact name="wind20-25Knots">yes</fact>				
+				<fact name="weightBelow70kg">yes</fact>
+				<fact name="seaConditions">no</fact>
 			</and>		
 		</if>
 		<then>
@@ -500,9 +500,9 @@
 		<description>between 25-30 knots and below 70kg = 8m2</description>
 		<if>
 			<and>
-				<fact name="wind30">yes</fact>
-				<fact name="weight70">yes</fact>
-				<fact name="seaChoppy">no</fact>
+				<fact name="wind25-30Knots">yes</fact>
+				<fact name="weightBelow70kg">yes</fact>
+				<fact name="seaConditions">no</fact>
 			</and>		
 		</if>
 		<then>
@@ -514,13 +514,13 @@
 		<description>between 30-35 knots and below 70kg = 7m2</description>
 		<if>
 			<and>
-				<fact name="wind35">yes</fact>
-				<fact name="weight70">yes</fact>
-				<fact name="seaChoppy">no</fact>
+				<fact name="wind30-35Knots">yes</fact>
+				<fact name="weightBelow70kg">yes</fact>
+				<fact name="seaConditions">no</fact>
 				<not>
 					<or>
-						<fact name="brookie">yes</fact>
-						<fact name="rookie">yes</fact>
+						<fact name="level:beginner">yes</fact>
+						<fact name="level:brookie">yes</fact>
 					</or>
 				</not>
 			</and>		
@@ -534,13 +534,13 @@
 		<description>between 35-40 knots and below 70kg = 6m2</description>
 		<if>
 			<and>
-				<fact name="wind40">yes</fact>
-				<fact name="weight70">yes</fact>
-				<fact name="seaChoppy">no</fact>
+				<fact name="wind35-40Knots">yes</fact>
+				<fact name="weightBelow70kg">yes</fact>
+				<fact name="seaConditions">no</fact>
 				<not>
 					<or>
-						<fact name="brookie">yes</fact>
-						<fact name="rookie">yes</fact>
+						<fact name="level:beginner">yes</fact>
+						<fact name="level:brookie">yes</fact>
 					</or>
 				</not>
 			</and>		
@@ -554,9 +554,9 @@
 		<description>above 40 knots and below 70kg = no kitesurfing</description>
 		<if>
 			<and>
-				<fact name="wind50">yes</fact>
-				<fact name="weight70">yes</fact>
-				<fact name="seaChoppy">no</fact>
+				<fact name="wind40+Knots">yes</fact>
+				<fact name="weightBelow70kg">yes</fact>
+				<fact name="seaConditions">no</fact>
 			</and>		
 		</if>
 		<then>
@@ -571,9 +571,9 @@
 		<description>between 8-12 knots and between 70-90kg = no kitesurfing</description>
 		<if>
 			<and>
-				<fact name="wind12">yes</fact>
-				<fact name="weight90">yes</fact>
-				<fact name="seaChoppy">no</fact>
+				<fact name="wind8-12Knots">yes</fact>
+				<fact name="weight70-90kg">yes</fact>
+				<fact name="seaConditions">no</fact>
 			</and>		
 		</if>
 		<then>
@@ -586,9 +586,9 @@
 		<description>between 12-15 knots and between 70-90kg = 15m2</description>
 		<if>
 			<and>
-				<fact name="wind15">yes</fact>
-				<fact name="weight90">yes</fact>
-				<fact name="seaChoppy">no</fact>
+				<fact name="wind12-15Knots">yes</fact>
+				<fact name="weight70-90kg">yes</fact>
+				<fact name="seaConditions">no</fact>
 			</and>		
 		</if>
 		<then>
@@ -600,9 +600,9 @@
 		<description>between 15-20 knots and between 70-90kg = 13m2</description>
 		<if>
 			<and>
-				<fact name="wind20">yes</fact>
-				<fact name="weight90">yes</fact>
-				<fact name="seaChoppy">no</fact>
+				<fact name="wind15-20Knots">yes</fact>
+				<fact name="weight70-90kg">yes</fact>
+				<fact name="seaConditions">no</fact>
 			</and>		
 		</if>
 		<then>
@@ -614,9 +614,9 @@
 		<description>between 20-25 knots and between 70-90kg = 11m2</description>
 		<if>
 			<and>
-				<fact name="wind25">yes</fact>
-				<fact name="weight90">yes</fact>
-				<fact name="seaChoppy">no</fact>
+				<fact name="wind20-25Knots">yes</fact>
+				<fact name="weight70-90kg">yes</fact>
+				<fact name="seaConditions">no</fact>
 			</and>		
 		</if>
 		<then>
@@ -628,9 +628,9 @@
 		<description>between 25-30 knots and between 70-90kg = 9m2</description>
 		<if>
 			<and>
-				<fact name="wind30">yes</fact>
-				<fact name="weight90">yes</fact>
-				<fact name="seaChoppy">no</fact>
+				<fact name="wind25-30Knots">yes</fact>
+				<fact name="weight70-90kg">yes</fact>
+				<fact name="seaConditions">no</fact>
 			</and>		
 		</if>
 		<then>
@@ -642,13 +642,13 @@
 		<description>between 30-35 knots and between 70-90kg = 8m2</description>
 		<if>
 			<and>
-				<fact name="wind35">yes</fact>
-				<fact name="weight90">yes</fact>
-				<fact name="seaChoppy">no</fact>
+				<fact name="wind30-35Knots">yes</fact>
+				<fact name="weight70-90kg">yes</fact>
+				<fact name="seaConditions">no</fact>
 				<not>
 					<or>
-						<fact name="brookie">yes</fact>
-						<fact name="rookie">yes</fact>
+						<fact name="level:beginner">yes</fact>
+						<fact name="level:brookie">yes</fact>
 					</or>
 				</not>
 			</and>		
@@ -662,13 +662,13 @@
 		<description>between 35-40 knots and between 70-90kg = 7m2</description>
 		<if>
 			<and>
-				<fact name="wind40">yes</fact>
-				<fact name="weight90">yes</fact>
-				<fact name="seaChoppy">no</fact>
+				<fact name="wind35-40Knots">yes</fact>
+				<fact name="weight70-90kg">yes</fact>
+				<fact name="seaConditions">no</fact>
 				<not>
 					<or>
-						<fact name="brookie">yes</fact>
-						<fact name="rookie">yes</fact>
+						<fact name="level:beginner">yes</fact>
+						<fact name="level:brookie">yes</fact>
 					</or>
 				</not>
 			</and>		
@@ -682,13 +682,13 @@
 		<description>above 40 knots and between 70-90kg = 6m2</description>
 		<if>
 			<and>
-				<fact name="wind50">yes</fact>
-				<fact name="weight90">yes</fact>
-				<fact name="seaChoppy">no</fact>
+				<fact name="wind40+Knots">yes</fact>
+				<fact name="weight70-90kg">yes</fact>
+				<fact name="seaConditions">no</fact>
 				<not>
 					<or>
-						<fact name="brookie">yes</fact>
-						<fact name="rookie">yes</fact>
+						<fact name="level:beginner">yes</fact>
+						<fact name="level:brookie">yes</fact>
 					</or>
 				</not>
 			</and>		
@@ -704,9 +704,9 @@
 		<description>between 8-12 knots and above 90kg = no kiting possible</description>
 		<if>
 			<and>
-				<fact name="wind12">yes</fact>
-				<fact name="weight100">yes</fact>
-				<fact name="seaChoppy">no</fact>
+				<fact name="wind8-12Knots">yes</fact>
+				<fact name="weightAbove90kg">yes</fact>
+				<fact name="seaConditions">no</fact>
 			</and>		
 		</if>
 		<then>
@@ -719,9 +719,9 @@
 		<description>between 12-15 knots and above 90kg = no kiting possible</description>
 		<if>
 			<and>
-				<fact name="wind15">yes</fact>
-				<fact name="weight100">yes</fact>
-				<fact name="seaChoppy">no</fact>
+				<fact name="wind12-15Knots">yes</fact>
+				<fact name="weightAbove90kg">yes</fact>
+				<fact name="seaConditions">no</fact>
 			</and>		
 		</if>
 		<then>
@@ -734,9 +734,9 @@
 		<description>between 15-20 knots and above 90kg = 15m2</description>
 		<if>
 			<and>
-				<fact name="wind20">yes</fact>
-				<fact name="weight100">yes</fact>
-				<fact name="seaChoppy">no</fact>
+				<fact name="wind15-20Knots">yes</fact>
+				<fact name="weightAbove90kg">yes</fact>
+				<fact name="seaConditions">no</fact>
 			</and>		
 		</if>
 		<then>
@@ -748,9 +748,9 @@
 		<description>between 20-25 knots and above 90kg = 12m2</description>
 		<if>
 			<and>
-				<fact name="wind25">yes</fact>
-				<fact name="weight100">yes</fact>
-				<fact name="seaChoppy">no</fact>
+				<fact name="wind20-25Knots">yes</fact>
+				<fact name="weightAbove90kg">yes</fact>
+				<fact name="seaConditions">no</fact>
 			</and>		
 		</if>
 		<then>
@@ -762,9 +762,9 @@
 		<description>between 25-30 knots and above 90kg = 10m2</description>
 		<if>
 			<and>
-				<fact name="wind30">yes</fact>
-				<fact name="weight100">yes</fact>
-				<fact name="seaChoppy">no</fact>
+				<fact name="wind25-30Knots">yes</fact>
+				<fact name="weightAbove90kg">yes</fact>
+				<fact name="seaConditions">no</fact>
 			</and>		
 		</if>
 		<then>
@@ -776,13 +776,13 @@
 		<description>between 30-35 knots and above 90kg = 9m2</description>
 		<if>
 			<and>
-				<fact name="wind35">yes</fact>
-				<fact name="weight100">yes</fact>
-				<fact name="seaChoppy">no</fact>
+				<fact name="wind30-35Knots">yes</fact>
+				<fact name="weightAbove90kg">yes</fact>
+				<fact name="seaConditions">no</fact>
 				<not>
 					<or>
-						<fact name="brookie">yes</fact>
-						<fact name="rookie">yes</fact>
+						<fact name="level:beginner">yes</fact>
+						<fact name="level:brookie">yes</fact>
 					</or>
 				</not>
 			</and>		
@@ -796,13 +796,13 @@
 		<description>between 35-40 knots and above 90kg = 8m2</description>
 		<if>
 			<and>
-				<fact name="wind40">yes</fact>
-				<fact name="weight100">yes</fact>
-				<fact name="seaChoppy">no</fact>
+				<fact name="wind35-40Knots">yes</fact>
+				<fact name="weightAbove90kg">yes</fact>
+				<fact name="seaConditions">no</fact>
 				<not>
 					<or>
-						<fact name="brookie">yes</fact>
-						<fact name="rookie">yes</fact>
+						<fact name="level:beginner">yes</fact>
+						<fact name="level:brookie">yes</fact>
 					</or>
 				</not>
 			</and>		
@@ -816,13 +816,13 @@
 		<description>above 40 knots and above 90kg = 6m2</description>
 		<if>
 			<and>
-				<fact name="wind50">yes</fact>
-				<fact name="weight100">yes</fact>
-				<fact name="seaChoppy">no</fact>
+				<fact name="wind40+Knots">yes</fact>
+				<fact name="weightAbove90kg">yes</fact>
+				<fact name="seaConditions">no</fact>
 				<not>
 					<or>
-						<fact name="brookie">yes</fact>
-						<fact name="rookie">yes</fact>
+						<fact name="level:beginner">yes</fact>
+						<fact name="level:brookie">yes</fact>
 					</or>
 				</not>
 			</and>		
@@ -840,8 +840,8 @@
 		<if>
 			<and>
 				<or>
-					<fact name="advanced">yes</fact>
-					<fact name="pro">yes</fact>
+					<fact name="level:rookie">yes</fact>
+					<fact name="level:advanced">yes</fact>
 				</or>
 				<fact name="kite15">yes</fact>	
 				<not>
@@ -860,8 +860,8 @@
 		<if>
 			<and>
 				<or>
-					<fact name="advanced">yes</fact>
-					<fact name="pro">yes</fact>
+					<fact name="level:rookie">yes</fact>
+					<fact name="level:advanced">yes</fact>
 				</or>
 				<fact name="kite14">yes</fact>	
 				<not>
@@ -879,8 +879,8 @@
 		<if>
 			<and>
 				<or>
-					<fact name="advanced">yes</fact>
-					<fact name="pro">yes</fact>
+					<fact name="level:rookie">yes</fact>
+					<fact name="level:advanced">yes</fact>
 				</or>
 				<fact name="kite13">yes</fact>	
 				<not>
@@ -898,8 +898,8 @@
 		<if>
 			<and>
 				<or>
-					<fact name="advanced">yes</fact>
-					<fact name="pro">yes</fact>
+					<fact name="level:rookie">yes</fact>
+					<fact name="level:advanced">yes</fact>
 				</or>
 				<fact name="kite12">yes</fact>	
 				<not>
@@ -917,8 +917,8 @@
 		<if>
 			<and>
 				<or>
-					<fact name="advanced">yes</fact>
-					<fact name="pro">yes</fact>
+					<fact name="level:rookie">yes</fact>
+					<fact name="level:advanced">yes</fact>
 				</or>
 				<fact name="kite11">yes</fact>	
 				<not>
@@ -940,16 +940,16 @@
 			<or>
 				<or>	
 					<and>
-						<fact name="advanced">no</fact>
-						<fact name="pro">no</fact>	
+						<fact name="level:rookie">no</fact>
+						<fact name="level:advanced">no</fact>	
 					</and>
 						<fact name="deep_enough_for_foiling">no</fact>
 				</or>	
 				<or>
-					<fact name="wind8">yes</fact>
-					<fact name="wind35">yes</fact>
-					<fact name="wind40">yes</fact>
-					<fact name="wind50">yes</fact>
+					<fact name="wind0-8Knots">yes</fact>
+					<fact name="wind30-35Knots">yes</fact>
+					<fact name="wind35-40Knots">yes</fact>
+					<fact name="wind40+Knots">yes</fact>
 				</or>
 			</or>	
 		</if>
@@ -965,14 +965,14 @@
 		<if>
 			<or>	
 				<and>
-					<fact name="advanced">no</fact>
-					<fact name="pro">no</fact>	
+					<fact name="level:rookie">no</fact>
+					<fact name="level:advanced">no</fact>	
 				</and>
 				<or>
-					<fact name="wind8">yes</fact>
-					<fact name="wind35">yes</fact>
-					<fact name="wind40">yes</fact>
-					<fact name="wind50">yes</fact>
+					<fact name="wind0-8Knots">yes</fact>
+					<fact name="wind30-35Knots">yes</fact>
+					<fact name="wind35-40Knots">yes</fact>
+					<fact name="wind40+Knots">yes</fact>
 				</or>
 			</or>
 		</if>
@@ -988,8 +988,8 @@
 		<if>
 			<and>
 				<or>
-					<fact name="advanced">yes</fact>
-					<fact name="pro">yes</fact>
+					<fact name="level:rookie">yes</fact>
+					<fact name="level:advanced">yes</fact>
 				</or>
 				<fact name="kite15">yes</fact>	
 			</and>
@@ -1004,8 +1004,8 @@
 		<if>
 			<and>
 				<or>
-					<fact name="advanced">yes</fact>
-					<fact name="pro">yes</fact>
+					<fact name="level:rookie">yes</fact>
+					<fact name="level:advanced">yes</fact>
 				</or>
 				<fact name="kite14">yes</fact>	
 			</and>
@@ -1020,8 +1020,8 @@
 		<if>
 			<and>
 				<or>
-					<fact name="advanced">yes</fact>
-					<fact name="pro">yes</fact>
+					<fact name="level:rookie">yes</fact>
+					<fact name="level:advanced">yes</fact>
 				</or>
 				<fact name="kite13">yes</fact>	
 			</and>	
@@ -1036,8 +1036,8 @@
 		<if>
 			<and>
 				<or>
-					<fact name="advanced">yes</fact>
-					<fact name="pro">yes</fact>
+					<fact name="level:rookie">yes</fact>
+					<fact name="level:advanced">yes</fact>
 				</or> 
 				<fact name="kite12">yes</fact>	
 			</and>
@@ -1052,8 +1052,8 @@
 		<if>
 			<and>
 				<or>
-					<fact name="advanced">yes</fact>
-					<fact name="pro">yes</fact>
+					<fact name="level:rookie">yes</fact>
+					<fact name="level:advanced">yes</fact>
 				</or>
 				<fact name="kite11">yes</fact>	
 			</and>	
@@ -1068,8 +1068,8 @@
 		<if>
 			<and>
 				<or>
-					<fact name="advanced">yes</fact>
-					<fact name="pro">yes</fact>
+					<fact name="level:rookie">yes</fact>
+					<fact name="level:advanced">yes</fact>
 				</or>
 				<fact name="kite10">yes</fact>	
 			</and>		
@@ -1079,18 +1079,18 @@
 		</then>
 	</rule>	
 
-	<!-- #### Brookie: wind too hard to go kiting #### -->
+	<!-- #### level:beginner: wind too hard to go kiting #### -->
 	
 	<rule>
-		<description>For the level:brookie, this wind is to hard to go kitesurfing even on a twintip</description>
+		<description>For the level:level:beginner, this wind is to hard to go kitesurfing even on a twintip</description>
 		<if>
 			<and>
-				<fact name="brookie">yes</fact>	
+				<fact name="level:beginner">yes</fact>	
 				<or>
-				<fact name="wind30">yes</fact>
-				<fact name="wind35">yes</fact>
-				<fact name="wind40">yes</fact>
-				<fact name="wind50">yes</fact>
+				<fact name="wind25-30Knots">yes</fact>
+				<fact name="wind30-35Knots">yes</fact>
+				<fact name="wind35-40Knots">yes</fact>
+				<fact name="wind40+Knots">yes</fact>
 				</or>
 			</and>
 		</if>
@@ -1100,17 +1100,17 @@
 		</then>
 	</rule>	
 
-	<!-- #### Rookie: wind too hard to go kiting #### -->
+	<!-- #### level:brookie: wind too hard to go kiting #### -->
 	
 	<rule>
-		<description>For the level:rookie, this wind is to hard to go kitesurfing even on a twintip</description>
+		<description>For the level:level:brookie, this wind is to hard to go kitesurfing even on a twintip</description>
 		<if>
 			<and>
-				<fact name="rookie">yes</fact>	
+				<fact name="level:brookie">yes</fact>	
 				<or>
-				<fact name="wind35">yes</fact>
-				<fact name="wind40">yes</fact>
-				<fact name="wind50">yes</fact>
+				<fact name="wind30-35Knots">yes</fact>
+				<fact name="wind35-40Knots">yes</fact>
+				<fact name="wind40+Knots">yes</fact>
 				</or>
 			</and>
 		</if>
@@ -1124,7 +1124,7 @@
 		<description>To make sure no other kind off wetsuits are shown</description>
 		<if>
 			<and>
-				<fact name="temp0">yes</fact>
+				<fact name="tempBelow0Degrees">yes</fact>
 				<not><fact name="twintip">no</fact></not>
 			</and>
 		</if>
@@ -1137,7 +1137,7 @@
 		<description>To make sure no other kind off wetsuits are shown</description>
 		<if>
 			<and>
-				<fact name="temp010">yes</fact>	
+				<fact name="temp0-10Degrees">yes</fact>	
 				<not><fact name="twintip">no</fact></not>
 				
 			</and>
@@ -1151,7 +1151,7 @@
 		<description>To make sure no other kind off wetsuits are shown</description>
 		<if>
 			<and>
-				<fact name="temp1020">yes</fact>
+				<fact name="temp10-20Degrees">yes</fact>
 				<not><fact name="twintip">no</fact></not>
 
 			</and>	
@@ -1166,7 +1166,7 @@
 		<description>To make sure no other kind off wetsuits are shown</description>
 		<if>
 			<and>
-				<fact name="temp20">yes</fact>
+				<fact name="tempAbove20Degrees">yes</fact>
 				<not><fact name="twintip">no</fact></not>
 			</and>	
 		</if>
@@ -1187,37 +1187,37 @@
 		<option>
 			<description>Below 0 degrees</description>
 			<then>
-				<fact name="temp0">yes</fact>
-				<fact name="temp010">no</fact>
-				<fact name="temp1020">no</fact>
-				<fact name="temp20">no</fact>
+				<fact name="tempBelow0Degrees">yes</fact>
+				<fact name="temp0-10Degrees">no</fact>
+				<fact name="temp10-20Degrees">no</fact>
+				<fact name="tempAbove20Degrees">no</fact>
 			</then>
 		</option>
 		<option>
 			<description>Between 0 and 10 degrees</description>
 			<then>
-				<fact name="temp0">no</fact>
-				<fact name="temp010">yes</fact>
-				<fact name="temp1020">no</fact>
-				<fact name="temp20">no</fact>
+				<fact name="tempBelow0Degrees">no</fact>
+				<fact name="temp0-10Degrees">yes</fact>
+				<fact name="temp10-20Degrees">no</fact>
+				<fact name="tempAbove20Degrees">no</fact>
 			</then>
 		</option>
 		<option>
 			<description>Between 10 and 20 degrees</description>
 			<then>
-				<fact name="temp0">no</fact>
-				<fact name="temp010">no</fact>
-				<fact name="temp1020">yes</fact>
-				<fact name="temp20">no</fact>
+				<fact name="tempBelow0Degrees">no</fact>
+				<fact name="temp0-10Degrees">no</fact>
+				<fact name="temp10-20Degrees">yes</fact>
+				<fact name="tempAbove20Degrees">no</fact>
 			</then>
 		</option>
 		<option>
 			<description>Above 20 degrees</description>
 			<then>
-				<fact name="temp0">no</fact>
-				<fact name="temp010">no</fact>
-				<fact name="temp1020">no</fact>
-				<fact name="temp20">yes</fact>
+				<fact name="tempBelow0Degrees">no</fact>
+				<fact name="temp0-10Degrees">no</fact>
+				<fact name="temp10-20Degrees">no</fact>
+				<fact name="tempAbove20Degrees">yes</fact>
 			</then>
 		</option>
 	</question>
@@ -1227,37 +1227,37 @@
 		<option>
 			<description>Beginner (less than 3 kitesessions) </description>
 			<then>
-				<fact name="brookie">yes</fact>
-				<fact name="rookie">no</fact>
-				<fact name="advanced">no</fact>
-				<fact name="pro">no</fact>
+				<fact name="level:beginner">yes</fact>
+				<fact name="level:brookie">no</fact>
+				<fact name="level:rookie">no</fact>
+				<fact name="level:advanced">no</fact>
 			</then>
 		</option>
 		<option>
-			<description>Brookie (3-8 kitesessions)</description>
+			<description>level:beginner (3-8 kitesessions)</description>
 			<then>
-				<fact name="brookie">no</fact>
-				<fact name="rookie">yes</fact>
-				<fact name="advanced">no</fact>
-				<fact name="pro">no</fact>
+				<fact name="level:beginner">no</fact>
+				<fact name="level:brookie">yes</fact>
+				<fact name="level:rookie">no</fact>
+				<fact name="level:advanced">no</fact>
 			</then>
 		</option>
 		<option>
-			<description>Rookie (8-30 kitesessions)</description>
+			<description>level:brookie (8-30 kitesessions)</description>
 			<then>
-				<fact name="brookie">no</fact>
-				<fact name="rookie">no</fact>
-				<fact name="advanced">yes</fact>
-				<fact name="pro">no</fact>
+				<fact name="level:beginner">no</fact>
+				<fact name="level:brookie">no</fact>
+				<fact name="level:rookie">yes</fact>
+				<fact name="level:advanced">no</fact>
 			</then>
 		</option>
 		<option>
-			<description>Advanced (more than 30 kitesessions)</description>
+			<description>level:rookie (more than 30 kitesessions)</description>
 			<then>
-				<fact name="brookie">no</fact>
-				<fact name="rookie">no</fact>
-				<fact name="advanced">no</fact>
-				<fact name="pro">yes</fact>
+				<fact name="level:beginner">no</fact>
+				<fact name="level:brookie">no</fact>
+				<fact name="level:rookie">no</fact>
+				<fact name="level:advanced">yes</fact>
 			</then>
 		</option>
 	</question>
@@ -1285,13 +1285,13 @@
 		<option>
 			<description>Yes</description>
 			<then>
-				<fact name="seaChoppy">yes</fact>
+				<fact name="seaConditions">yes</fact>
 			</then>
 		</option>
 		<option>
 			<description>No</description>
 			<then>
-				<fact name="seaChoppy">no</fact>
+				<fact name="seaConditions">no</fact>
 			</then>
 		</option>
 	</question>
@@ -1302,25 +1302,25 @@
 		<option>
 			<description>Below 70 kg</description>
 			<then>
-				<fact name="weight70">yes</fact>
-				<fact name="weight90">no</fact>
-				<fact name="weight100">no</fact>
+				<fact name="weightBelow70kg">yes</fact>
+				<fact name="weight70-90kg">no</fact>
+				<fact name="weightAbove90kg">no</fact>
 			</then>
 		</option>
 		<option>
 			<description>Between 70-90 kg</description>
 			<then>
-				<fact name="weight70">no</fact>
-				<fact name="weight90">yes</fact>
-				<fact name="weight100">no</fact>
+				<fact name="weightBelow70kg">no</fact>
+				<fact name="weight70-90kg">yes</fact>
+				<fact name="weightAbove90kg">no</fact>
 			</then>
 		</option>
 		<option>
 			<description>Above 90 kg</description>
 			<then>
-				<fact name="weight70">no</fact>
-				<fact name="weight90">no</fact>
-				<fact name="weight100">yes</fact>
+				<fact name="weightBelow70kg">no</fact>
+				<fact name="weight70-90kg">no</fact>
+				<fact name="weightAbove90kg">yes</fact>
 			</then>
 		</option>
 	</question>
@@ -1331,127 +1331,127 @@
 		<option>
 			<description>0-8 knots</description>
 			<then>
-				<fact name="wind8">yes</fact>
-				<fact name="wind12">no</fact>
-				<fact name="wind15">no</fact>
-				<fact name="wind20">no</fact>
-				<fact name="wind25">no</fact>
-				<fact name="wind30">no</fact>
-				<fact name="wind35">no</fact>
-				<fact name="wind40">no</fact>
-				<fact name="wind50">no</fact>
+				<fact name="wind0-8Knots">yes</fact>
+				<fact name="wind8-12Knots">no</fact>
+				<fact name="wind12-15Knots">no</fact>
+				<fact name="wind15-20Knots">no</fact>
+				<fact name="wind20-25Knots">no</fact>
+				<fact name="wind25-30Knots">no</fact>
+				<fact name="wind30-35Knots">no</fact>
+				<fact name="wind35-40Knots">no</fact>
+				<fact name="wind40+Knots">no</fact>
 			</then>
 		</option>
 		<option>
 			<description>8-12 knots</description>
 			<then>
-				<fact name="wind8">no</fact>
-				<fact name="wind12">yes</fact>
-				<fact name="wind15">no</fact>
-				<fact name="wind20">no</fact>
-				<fact name="wind25">no</fact>
-				<fact name="wind30">no</fact>
-				<fact name="wind35">no</fact>
-				<fact name="wind40">no</fact>
-				<fact name="wind50">no</fact>
+				<fact name="wind0-8Knots">no</fact>
+				<fact name="wind8-12Knots">yes</fact>
+				<fact name="wind12-15Knots">no</fact>
+				<fact name="wind15-20Knots">no</fact>
+				<fact name="wind20-25Knots">no</fact>
+				<fact name="wind25-30Knots">no</fact>
+				<fact name="wind30-35Knots">no</fact>
+				<fact name="wind35-40Knots">no</fact>
+				<fact name="wind40+Knots">no</fact>
 			</then>
 		</option>
 		<option>
 			<description>12-15 knots</description>
 			<then>
-				<fact name="wind8">no</fact>
-				<fact name="wind12">no</fact>
-				<fact name="wind15">yes</fact>
-				<fact name="wind20">no</fact>
-				<fact name="wind25">no</fact>
-				<fact name="wind30">no</fact>
-				<fact name="wind35">no</fact>
-				<fact name="wind40">no</fact>
-				<fact name="wind50">no</fact>
+				<fact name="wind0-8Knots">no</fact>
+				<fact name="wind8-12Knots">no</fact>
+				<fact name="wind12-15Knots">yes</fact>
+				<fact name="wind15-20Knots">no</fact>
+				<fact name="wind20-25Knots">no</fact>
+				<fact name="wind25-30Knots">no</fact>
+				<fact name="wind30-35Knots">no</fact>
+				<fact name="wind35-40Knots">no</fact>
+				<fact name="wind40+Knots">no</fact>
 			</then>
 		</option>
 		<option>
 			<description>15-20 knots</description>
 			<then>
-				<fact name="wind8">no</fact>
-				<fact name="wind12">no</fact>
-				<fact name="wind15">no</fact>
-				<fact name="wind20">yes</fact>
-				<fact name="wind25">no</fact>
-				<fact name="wind30">no</fact>
-				<fact name="wind35">no</fact>
-				<fact name="wind40">no</fact>
-				<fact name="wind50">no</fact>
+				<fact name="wind0-8Knots">no</fact>
+				<fact name="wind8-12Knots">no</fact>
+				<fact name="wind12-15Knots">no</fact>
+				<fact name="wind15-20Knots">yes</fact>
+				<fact name="wind20-25Knots">no</fact>
+				<fact name="wind25-30Knots">no</fact>
+				<fact name="wind30-35Knots">no</fact>
+				<fact name="wind35-40Knots">no</fact>
+				<fact name="wind40+Knots">no</fact>
 			</then>
 		</option>
 		<option>
 			<description>20-25 knots</description>
 			<then>
-				<fact name="wind8">no</fact>
-				<fact name="wind12">no</fact>
-				<fact name="wind15">no</fact>
-				<fact name="wind20">no</fact>
-				<fact name="wind25">yes</fact>
-				<fact name="wind30">no</fact>
-				<fact name="wind35">no</fact>
-				<fact name="wind40">no</fact>
-				<fact name="wind50">no</fact>
+				<fact name="wind0-8Knots">no</fact>
+				<fact name="wind8-12Knots">no</fact>
+				<fact name="wind12-15Knots">no</fact>
+				<fact name="wind15-20Knots">no</fact>
+				<fact name="wind20-25Knots">yes</fact>
+				<fact name="wind25-30Knots">no</fact>
+				<fact name="wind30-35Knots">no</fact>
+				<fact name="wind35-40Knots">no</fact>
+				<fact name="wind40+Knots">no</fact>
 			</then>
 		</option>
 		<option>
 			<description>25-30 knots</description>
 			<then>
-				<fact name="wind8">no</fact>
-				<fact name="wind12">no</fact>
-				<fact name="wind15">no</fact>
-				<fact name="wind20">no</fact>
-				<fact name="wind25">no</fact>
-				<fact name="wind30">yes</fact>
-				<fact name="wind35">no</fact>
-				<fact name="wind40">no</fact>
-				<fact name="wind50">no</fact>
+				<fact name="wind0-8Knots">no</fact>
+				<fact name="wind8-12Knots">no</fact>
+				<fact name="wind12-15Knots">no</fact>
+				<fact name="wind15-20Knots">no</fact>
+				<fact name="wind20-25Knots">no</fact>
+				<fact name="wind25-30Knots">yes</fact>
+				<fact name="wind30-35Knots">no</fact>
+				<fact name="wind35-40Knots">no</fact>
+				<fact name="wind40+Knots">no</fact>
 			</then>
 		</option>
 		<option>
 			<description>30-35 knots</description>
 			<then>
-				<fact name="wind8">no</fact>
-				<fact name="wind12">no</fact>
-				<fact name="wind15">no</fact>
-				<fact name="wind20">no</fact>
-				<fact name="wind25">no</fact>
-				<fact name="wind30">no</fact>
-				<fact name="wind35">yes</fact>
-				<fact name="wind40">no</fact>
-				<fact name="wind50">no</fact>
+				<fact name="wind0-8Knots">no</fact>
+				<fact name="wind8-12Knots">no</fact>
+				<fact name="wind12-15Knots">no</fact>
+				<fact name="wind15-20Knots">no</fact>
+				<fact name="wind20-25Knots">no</fact>
+				<fact name="wind25-30Knots">no</fact>
+				<fact name="wind30-35Knots">yes</fact>
+				<fact name="wind35-40Knots">no</fact>
+				<fact name="wind40+Knots">no</fact>
 			</then>
 		</option>
 		<option>
 			<description>35-40 knots</description>
 			<then>
-				<fact name="wind8">no</fact>
-				<fact name="wind12">no</fact>
-				<fact name="wind15">no</fact>
-				<fact name="wind20">no</fact>
-				<fact name="wind25">no</fact>
-				<fact name="wind30">no</fact>
-				<fact name="wind35">no</fact>
-				<fact name="wind40">yes</fact>
-				<fact name="wind50">no</fact>
+				<fact name="wind0-8Knots">no</fact>
+				<fact name="wind8-12Knots">no</fact>
+				<fact name="wind12-15Knots">no</fact>
+				<fact name="wind15-20Knots">no</fact>
+				<fact name="wind20-25Knots">no</fact>
+				<fact name="wind25-30Knots">no</fact>
+				<fact name="wind30-35Knots">no</fact>
+				<fact name="wind35-40Knots">yes</fact>
+				<fact name="wind40+Knots">no</fact>
 			</then>
 		</option>
 		<option>
 			<description>above 40 knots</description>
 			<then>
-				<fact name="wind8">no</fact>
-				<fact name="wind12">no</fact>
-				<fact name="wind15">no</fact>
-				<fact name="wind20">no</fact>
-				<fact name="wind25">no</fact>
-				<fact name="wind30">no</fact>
-				<fact name="wind35">no</fact>
-				<fact name="wind40">no</fact>
-				<fact name="wind50">yes</fact>
+				<fact name="wind0-8Knots">no</fact>
+				<fact name="wind8-12Knots">no</fact>
+				<fact name="wind12-15Knots">no</fact>
+				<fact name="wind15-20Knots">no</fact>
+				<fact name="wind20-25Knots">no</fact>
+				<fact name="wind25-30Knots">no</fact>
+				<fact name="wind30-35Knots">no</fact>
+				<fact name="wind35-40Knots">no</fact>
+				<fact name="wind40+Knots">yes</fact>
 			</then>
 		</option>
 	</question>

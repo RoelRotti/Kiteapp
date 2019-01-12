@@ -941,6 +941,27 @@
 		</then>
 	</rule>	
 
+	<!-- ensure goal about measuring depth spot does not always show -->
+
+	<rule>
+		<description>Do you need to show advice to measure spot?</description>
+		<if>
+			<and>
+				<or>
+					<fact name="level:rookie">yes</fact>
+					<fact name="level:advanced">yes</fact>
+				</or>
+				<not>
+					<fact name="doNotKnowDepth">no</fact>
+				</not>
+			</and>
+		</if>
+		<then>
+			<fact name="showMessageMeasureDepth">yes</fact>
+		</then>
+	</rule>	
+
+
 	<!-- #### Boardchoice: NOT go foiling #### -->
 
 	
@@ -1281,14 +1302,14 @@
 			<description>Deeper than 1,5m</description>
 			<then>
 				<fact name="deep_enough_for_foiling">yes</fact>
-				<fact name="doKnowDepth">yes</fact>
+				<fact name="doNotKnowDepth">no</fact>
 			</then>
 		</option>
 		<option>
 			<description>Shallower than 1,5m</description>
 			<then>
 				<fact name="deep_enough_for_foiling">no</fact>
-				<fact name="doKnowDepth">yes</fact>
+				<fact name="doNotKnowDepth">no</fact>
 			</then>
 		</option>
 		<option>
@@ -1541,7 +1562,7 @@
 		<answer value="no">No! A hydrofoil is a board that contains a wing in the water below the board. For hydrofoiling you need to have a lot of experience in kitesurfing, a spot which is deeper than 1,5 meter and not too much wind. One of these requirements fails at the moment. To see how hydrofoiling works, have a look at the link in the top-left corner. </answer>
 	</goal>
 
-	<goal name="doNotKnowDepth">
+	<goal name="showMessageMeasureDepth">
 		<description>Can you use a hydrofoil?</description>
 		<answer value="yes">It depends. A hydrofoil is a board that contains a wing in the water below the board, so for hydrofoiling you need to have a spot which is deeper than 1,5 meter. Check the depth at the spot and if it is deeper than 1,5m all over the spot, choose the kite size shown below. To see how hydrofoiling works, have a look at the link in the top-left corner. </answer>
 	</goal>

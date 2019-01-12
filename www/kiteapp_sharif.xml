@@ -1287,6 +1287,7 @@
 			<description>Shallower than 1,5m</description>
 			<then>
 				<fact name="deep_enough_for_foiling">no</fact>
+				<fact name="doNotKnowDepth">no</fact>
 			</then>
 		</option>
 		<option>

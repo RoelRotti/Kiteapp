@@ -1292,6 +1292,7 @@
 		<option>
 			<description>I don't know</description>
 			<then>
+				<fact name="deep_enough_for_foiling">yes</fact>
 				<fact name="doNotKnowDepth">yes</fact>
 			</then>
 		</option>

@@ -29,10 +29,6 @@
 					<?php foreach($state->facts as $name => $value): ?>
 					<?php if($value == 'yes'){?>
 					<dt><?=$name?></dt>
-					<dd>
-
-								<?=$this->html($name)?>
-					</dd>
 					<?php } ?>
 					<?php endforeach ?>
 				</dl>

@@ -196,6 +196,7 @@ table {
 
 #debug-info {
 	display: block;
+	background-color: #eee;
 }
 
 .show-debug-info #debug-info {

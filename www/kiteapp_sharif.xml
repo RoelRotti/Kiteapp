@@ -951,6 +951,13 @@
 					<fact name="level:rookie">yes</fact>
 					<fact name="level:advanced">yes</fact>
 				</or>
+				<or>
+					<fact name="kite_to_foil_6">yes</fact>
+					<fact name="kite_to_foil_7">yes</fact>
+					<fact name="kite_to_foil_8">yes</fact>
+					<fact name="kite_to_foil_9">yes</fact>
+					<fact name="kite_to_foil_10">yes</fact>
+				</or>	
 				<not>
 					<fact name="kite">no</fact>
 					<fact name="doNotKnowDepth">no</fact>

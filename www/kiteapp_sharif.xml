@@ -1016,6 +1016,16 @@
 					<fact name="wind35-40Knots">yes</fact>
 					<fact name="wind40+Knots">yes</fact>
 				</or>
+				<not>
+					<or>
+						<fact name="kite_for_strapless_8">yes</fact>
+						<fact name="kite_for_strapless_9">yes</fact>
+						<fact name="kite_for_strapless_10">yes</fact>
+						<fact name="kite_for_strapless_11">yes</fact>
+						<fact name="kite_for_strapless_12">yes</fact>
+						<fact name="kite_for_strapless_12">yes</fact>
+					</or>
+				</not>
 			</or>
 		</if>
 		<then>

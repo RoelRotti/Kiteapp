@@ -953,6 +953,7 @@
 				</or>
 				<not>
 					<fact name="doNotKnowDepth">no</fact>
+					<fact name="twintip">no</fact>
 				</not>
 			</and>
 		</if>

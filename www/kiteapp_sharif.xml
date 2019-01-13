@@ -1575,7 +1575,7 @@
 
 	<goal name="messageDepth">
 		<description>Can you use a hydrofoil?</description>
-		<answer value="yes">It depends. A hydrofoil is a board that contains a wing in the water below the board, so for hydrofoiling you need to have a spot which is deeper than 1,5 meter. Check the depth at the spot and if it is deeper than 1,5m all over the spot, choose the kite size shown below. If no kite is advised for foiling the wind is too soft. To see how hydrofoiling works, have a look at the link in the top-left corner. </answer>
+		<answer value="yes">It depends. A hydrofoil is a board that contains a wing in the water below the board, so for hydrofoiling you need to have a spot which is deeper than 1,5 meter. Check the depth at the spot and if it is deeper than 1,5m all over the spot, choose the kite size shown below. To see how hydrofoiling works, have a look at the link in the top-left corner. </answer>
 	</goal>
 
 		<!-- #### Kite for strapless ####-->

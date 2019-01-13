@@ -952,11 +952,11 @@
 					<fact name="level:advanced">yes</fact>
 				</or>
 				<not>
+					<fact name="kite">no</fact>
 					<fact name="doNotKnowDepth">no</fact>
-					<fact name="twintip">no</fact>
 					<fact name="windTooSoft">yes</fact>
-
 				</not>
+				<fact name="twintip">yes</fact>
 			</and>
 		</if>
 		<then>

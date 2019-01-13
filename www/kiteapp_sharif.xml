@@ -855,7 +855,7 @@
 				</or>
 				<fact name="kite15">yes</fact>	
 				<not>
-					<fact name="deep_enough_for_foiling">no</fact>
+					<fact name="foilDeepEnough">no</fact>
 				</not>
 					
 			</and>		
@@ -875,7 +875,7 @@
 				</or>
 				<fact name="kite14">yes</fact>	
 				<not>
-					<fact name="deep_enough_for_foiling">no</fact>
+					<fact name="foilDeepEnough">no</fact>
 				</not>
 			</and>	
 		</if>
@@ -894,7 +894,7 @@
 				</or>
 				<fact name="kite13">yes</fact>	
 				<not>
-					<fact name="deep_enough_for_foiling">no</fact>
+					<fact name="foilDeepEnough">no</fact>
 				</not>
 			</and>	
 		</if>
@@ -913,7 +913,7 @@
 				</or>
 				<fact name="kite12">yes</fact>	
 				<not>
-					<fact name="deep_enough_for_foiling">no</fact>
+					<fact name="foilDeepEnough">no</fact>
 				</not>
 			</and>	
 		</if>
@@ -932,7 +932,7 @@
 				</or>
 				<fact name="kite11">yes</fact>	
 				<not>
-					<fact name="deep_enough_for_foiling">no</fact>
+					<fact name="foilDeepEnough">no</fact>
 				</not>
 			</and>
 		</if>
@@ -974,7 +974,7 @@
 						<fact name="level:rookie">no</fact>
 						<fact name="level:advanced">no</fact>	
 					</and>
-						<fact name="deep_enough_for_foiling">no</fact>
+						<fact name="foilDeepEnough">no</fact>
 				</or>	
 				<or>
 					<fact name="wind0-8Knots">yes</fact>
@@ -1301,21 +1301,21 @@
 		<option>
 			<description>Deeper than 1,5m</description>
 			<then>
-				<fact name="deep_enough_for_foiling">yes</fact>
+				<fact name="foilDeepEnough">yes</fact>
 				<fact name="doNotKnowDepth">no</fact>
 			</then>
 		</option>
 		<option>
 			<description>Shallower than 1,5m</description>
 			<then>
-				<fact name="deep_enough_for_foiling">no</fact>
+				<fact name="foilDeepEnough">no</fact>
 				<fact name="doNotKnowDepth">no</fact>
 			</then>
 		</option>
 		<option>
 			<description>I don't know</description>
 			<then>
-				<fact name="deep_enough_for_foiling">yes</fact>
+				<fact name="foilDeepEnough">yes</fact>
 				<fact name="doNotKnowDepth">yes</fact>
 			</then>
 		</option>

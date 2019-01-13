@@ -957,7 +957,7 @@
 			</and>
 		</if>
 		<then>
-			<fact name="showMessageMeasureDepth">yes</fact>
+			<fact name="messageDepth">yes</fact>
 		</then>
 	</rule>	
 
@@ -1562,7 +1562,7 @@
 		<answer value="no">No! A hydrofoil is a board that contains a wing in the water below the board. For hydrofoiling you need to have a lot of experience in kitesurfing, a spot which is deeper than 1,5 meter and not too much wind. One of these requirements fails at the moment. To see how hydrofoiling works, have a look at the link in the top-left corner. </answer>
 	</goal>
 
-	<goal name="showMessageMeasureDepth">
+	<goal name="messageDepth">
 		<description>Can you use a hydrofoil?</description>
 		<answer value="yes">It depends. A hydrofoil is a board that contains a wing in the water below the board, so for hydrofoiling you need to have a spot which is deeper than 1,5 meter. Check the depth at the spot and if it is deeper than 1,5m all over the spot, choose the kite size shown below. If no kite is advised for foiling the wind is too soft. To see how hydrofoiling works, have a look at the link in the top-left corner. </answer>
 	</goal>
@@ -1663,3 +1663,4 @@
 		<answer value="yes">15m2</answer>
 	</goal>
 </knowledge>
+ 
